@@ -1,1 +1,3 @@
-*.meta
+**/blend/*.meta
+**.blend1
+**/psd/*.meta
