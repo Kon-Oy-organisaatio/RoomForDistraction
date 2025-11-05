@@ -48,6 +48,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1001281382438128537, guid: 2e586be51b226664fb27e202171deab0, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a12a548d0150b5147a860beb65e78ab2, type: 2}
+    - target: {fileID: 340699166601600245, guid: 2e586be51b226664fb27e202171deab0, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a12a548d0150b5147a860beb65e78ab2, type: 2}
     - target: {fileID: 340699166601600245, guid: 2e586be51b226664fb27e202171deab0, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
@@ -79,5 +87,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1756443162215770420, guid: 2e586be51b226664fb27e202171deab0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4994877681344725644}
   m_SourcePrefab: {fileID: 100100000, guid: 2e586be51b226664fb27e202171deab0, type: 3}
+--- !u!1 &3714595195620856002 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1756443162215770420, guid: 2e586be51b226664fb27e202171deab0, type: 3}
+  m_PrefabInstance: {fileID: 3165123880366012918}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &4994877681344725644
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3714595195620856002}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.006283197, y: 0.01, z: 0.0102307275}
+  m_Center: {x: -0.00014159665, y: 0.0025000006, z: 0.0016153645}
