@@ -48,6 +48,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8f428ddf888a745459b418ff51485a40, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 2560e72b6a9e4314a840a1e95745ed63, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 8f428ddf888a745459b418ff51485a40, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: dc98bd510be2b4d4a9c04831b70150c3, type: 2}
     - target: {fileID: 919132149155446097, guid: 8f428ddf888a745459b418ff51485a40, type: 3}
       propertyPath: m_Name
       value: Wall_Short_Quarter

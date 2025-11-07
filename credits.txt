@@ -1,6 +1,2 @@
-Tileable Brick Ground Textures - Set 2 By Cethiel
-https://opengameart.org/content/tileable-brick-ground-textures-set-2
-
-
-MDF Wood Texture, 1K seamless - mdf_1k_n.png By YCbCr
-https://opengameart.org/content/mdf-wood-texture-1k-seamless-mdf1knpng
+Normal map for paintings
+https://cc0-textures.com/t/st-cream-fabric-46
