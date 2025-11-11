@@ -55,7 +55,7 @@ PrefabInstance:
     - target: {fileID: -4066662284429270248, guid: db8216c65bba0bf45b8208985fb8ced5, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
-      objectReference: {fileID: 2100000, guid: 8185f3b21be39ac41b4e0d4925141ba6, type: 2}
+      objectReference: {fileID: 2100000, guid: 9b43cfd370012024198d1fcc3c1ad90a, type: 2}
     - target: {fileID: -2570901135000619732, guid: db8216c65bba0bf45b8208985fb8ced5, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -63,7 +63,7 @@ PrefabInstance:
     - target: {fileID: -2570901135000619732, guid: db8216c65bba0bf45b8208985fb8ced5, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
-      objectReference: {fileID: 2100000, guid: 8185f3b21be39ac41b4e0d4925141ba6, type: 2}
+      objectReference: {fileID: 2100000, guid: 9b43cfd370012024198d1fcc3c1ad90a, type: 2}
     - target: {fileID: -1948804446025975041, guid: db8216c65bba0bf45b8208985fb8ced5, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -79,10 +79,10 @@ PrefabInstance:
     - target: {fileID: 529640899096505533, guid: db8216c65bba0bf45b8208985fb8ced5, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
-      objectReference: {fileID: 2100000, guid: 8185f3b21be39ac41b4e0d4925141ba6, type: 2}
+      objectReference: {fileID: 2100000, guid: 9b43cfd370012024198d1fcc3c1ad90a, type: 2}
     - target: {fileID: 919132149155446097, guid: db8216c65bba0bf45b8208985fb8ced5, type: 3}
       propertyPath: m_Name
-      value: cabinet_Drawer
+      value: Cabinet_Drawer
       objectReference: {fileID: 0}
     - target: {fileID: 5971456542158778415, guid: db8216c65bba0bf45b8208985fb8ced5, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -91,7 +91,7 @@ PrefabInstance:
     - target: {fileID: 5971456542158778415, guid: db8216c65bba0bf45b8208985fb8ced5, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
-      objectReference: {fileID: 2100000, guid: 8185f3b21be39ac41b4e0d4925141ba6, type: 2}
+      objectReference: {fileID: 2100000, guid: 9b43cfd370012024198d1fcc3c1ad90a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

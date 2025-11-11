@@ -51,7 +51,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: bfd1d87e24938794ba635b94f1885c90, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 754cc3a5b62eb204b97ccb8e935cf497, type: 2}
+      objectReference: {fileID: 2100000, guid: 6b45043d2b221e54d886ed01e0340f8e, type: 2}
     - target: {fileID: 919132149155446097, guid: bfd1d87e24938794ba635b94f1885c90, type: 3}
       propertyPath: m_Name
       value: Floor_Half
