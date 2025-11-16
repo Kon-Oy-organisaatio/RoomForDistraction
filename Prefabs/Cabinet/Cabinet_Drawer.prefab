@@ -48,6 +48,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4072418327377026630, guid: db8216c65bba0bf45b8208985fb8ced5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: -4066662284429270248, guid: db8216c65bba0bf45b8208985fb8ced5, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -56,6 +60,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: 9b43cfd370012024198d1fcc3c1ad90a, type: 2}
+    - target: {fileID: -3087469991650083429, guid: db8216c65bba0bf45b8208985fb8ced5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: -2570901135000619732, guid: db8216c65bba0bf45b8208985fb8ced5, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -72,6 +80,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: 1984adcfa538afd45b224b2326317ff5, type: 2}
+    - target: {fileID: -698480957811207722, guid: db8216c65bba0bf45b8208985fb8ced5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 183801203092675390, guid: db8216c65bba0bf45b8208985fb8ced5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.025282204
@@ -96,6 +108,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: 9b43cfd370012024198d1fcc3c1ad90a, type: 2}
+    - target: {fileID: 7718337930986555085, guid: db8216c65bba0bf45b8208985fb8ced5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -113,11 +129,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 617295328053639899}
   m_SourcePrefab: {fileID: 100100000, guid: db8216c65bba0bf45b8208985fb8ced5, type: 3}
---- !u!1 &4577961511230291341 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: db8216c65bba0bf45b8208985fb8ced5, type: 3}
-  m_PrefabInstance: {fileID: 3695562401794982108}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &4974007164647395594 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -698480957811207722, guid: db8216c65bba0bf45b8208985fb8ced5, type: 3}
@@ -137,7 +148,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractObject
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 5
-  basePrefab: {fileID: 4577961511230291341}
   relativePosition: {x: -0.30539325, y: 0, z: 0}
   relativeRotation: {x: 0, y: 0, z: 0}
   animationDuration: 0.45
@@ -160,7 +170,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractObject
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 5
-  basePrefab: {fileID: 4577961511230291341}
   relativePosition: {x: -0.30539325, y: 0, z: 0}
   relativeRotation: {x: 0, y: 0, z: 0}
   animationDuration: 0.45
@@ -183,7 +192,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractObject
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 5
-  basePrefab: {fileID: 4577961511230291341}
   relativePosition: {x: -0.30539325, y: 0, z: 0}
   relativeRotation: {x: 0, y: 0, z: 0}
   animationDuration: 0.45
@@ -206,7 +214,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractObject
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 5
-  basePrefab: {fileID: 4577961511230291341}
   relativePosition: {x: -0.30539325, y: 0, z: 0}
   relativeRotation: {x: 0, y: 0, z: 0}
   animationDuration: 0.45

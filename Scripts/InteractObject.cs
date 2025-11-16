@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
 
-public class InteractObject : MonoBehaviour
+public class InteractObject : MonoBehaviour, IInteractable
 {
     private Outline outline;
     public Color outlineColor = Color.white;
@@ -12,6 +12,7 @@ public class InteractObject : MonoBehaviour
     public Vector3 relativePosition;
     public Vector3 relativeRotation;
     public float animationDuration = 0.5f;
+    public string useAction = "Open/Close";
     private Vector3 startPosition;
     private Quaternion startRotation;
     private Coroutine currentAnimation;
@@ -27,6 +28,11 @@ public class InteractObject : MonoBehaviour
         startRotation = transform.localRotation;
     }
 
+    public string GetUseAction()
+    {
+        return useAction.Split('/')[isOpen ? 1 : 0].Trim();
+    }
+
     public void ShowOutline()
     {
         outline.enabled = true;
@@ -37,27 +43,15 @@ public class InteractObject : MonoBehaviour
         outline.enabled = false;
     }
 
-#if UNITY_EDITOR
-    public void Update()
+    public void Interact()
     {
-        if (Keyboard.current != null)
+        if (currentAnimation != null)
         {
-            if (Keyboard.current.eKey.wasPressedThisFrame)
-            {
-                Interact();
-            }
-            if (Keyboard.current.fKey.isPressed)
-            {
-                ShowOutline();
-            }
-            else
-            {
-                HideOutline();
-            }
-            return;
+            StopCoroutine(currentAnimation);
         }
+        isOpen = !isOpen;
+        currentAnimation = StartCoroutine(AnimateDrawer(isOpen));
     }
-#endif
 
     private IEnumerator AnimateDrawer(bool open)
     {
@@ -81,14 +75,28 @@ public class InteractObject : MonoBehaviour
         transform.localRotation = targetRotation;
     }
 
-    public void Interact()
+
+#if UNITY_EDITOR
+    public void Update()
     {
-        if (currentAnimation != null)
+        if (Keyboard.current != null)
         {
-            StopCoroutine(currentAnimation);
+            if (Keyboard.current.eKey.wasPressedThisFrame)
+            {
+                Interact();
+            }
+            if (Keyboard.current.fKey.isPressed)
+            {
+                ShowOutline();
+            }
+            else
+            {
+                HideOutline();
+            }
+            return;
         }
-        isOpen = !isOpen;
-        currentAnimation = StartCoroutine(AnimateDrawer(isOpen));
     }
+#endif
+
 
 }
