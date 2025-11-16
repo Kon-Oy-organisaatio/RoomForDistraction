@@ -19,24 +19,6 @@
 			"to_port": 0
 		},
 		{
-			"from": "colorize_2",
-			"from_port": 0,
-			"to": "blend2",
-			"to_port": 1
-		},
-		{
-			"from": "colorize",
-			"from_port": 0,
-			"to": "blend2",
-			"to_port": 3
-		},
-		{
-			"from": "blend2",
-			"from_port": 0,
-			"to": "rotate",
-			"to_port": 0
-		},
-		{
 			"from": "normal_map2",
 			"from_port": 0,
 			"to": "normal_map_convert_2",
@@ -71,6 +53,48 @@
 			"from_port": 0,
 			"to": "Material",
 			"to_port": 0
+		},
+		{
+			"from": "perlin",
+			"from_port": 0,
+			"to": "warp",
+			"to_port": 1
+		},
+		{
+			"from": "colorize",
+			"from_port": 0,
+			"to": "warp",
+			"to_port": 0
+		},
+		{
+			"from": "colorize_2",
+			"from_port": 0,
+			"to": "warp_2",
+			"to_port": 0
+		},
+		{
+			"from": "warp_2",
+			"from_port": 0,
+			"to": "blend2",
+			"to_port": 1
+		},
+		{
+			"from": "warp",
+			"from_port": 0,
+			"to": "blend2",
+			"to_port": 3
+		},
+		{
+			"from": "blend2",
+			"from_port": 0,
+			"to": "rotate",
+			"to_port": 0
+		},
+		{
+			"from": "perlin_2",
+			"from_port": 0,
+			"to": "warp_2",
+			"to_port": 1
 		}
 	],
 	"label": "Graph",
@@ -114,12 +138,12 @@
 		{
 			"name": "noise_anisotropic",
 			"node_position": {
-				"x": -772.665832519531,
-				"y": -99.3063583374023
+				"x": -1279.62475585938,
+				"y": -108.952507019043
 			},
 			"parameters": {
 				"interpolation": 1.0,
-				"scale_x": 5.0,
+				"scale_x": 17.0,
 				"scale_y": 729.0,
 				"smoothness": 1.0
 			},
@@ -129,8 +153,8 @@
 		{
 			"name": "colorize",
 			"node_position": {
-				"x": -496.664031982422,
-				"y": -89.4295043945312
+				"x": -1005.23345947266,
+				"y": -100.686164855957
 			},
 			"parameters": {
 				"gradient": {
@@ -160,8 +184,8 @@
 		{
 			"name": "uniform",
 			"node_position": {
-				"x": -231.520935058594,
-				"y": -275.717926025391
+				"x": -204.72607421875,
+				"y": -180.061645507812
 			},
 			"parameters": {
 				"color": {
@@ -178,8 +202,8 @@
 		{
 			"name": "noise_anisotropic_2",
 			"node_position": {
-				"x": -711.573059082031,
-				"y": -252.054412841797
+				"x": -1218.53198242188,
+				"y": -261.700561523438
 			},
 			"parameters": {
 				"interpolation": 1.0,
@@ -193,8 +217,8 @@
 		{
 			"name": "colorize_2",
 			"node_position": {
-				"x": -433.753112792969,
-				"y": -238.541198730469
+				"x": -943.288818359375,
+				"y": -248.187347412109
 			},
 			"parameters": {
 				"gradient": {
@@ -225,8 +249,8 @@
 			"generic_size": 2,
 			"name": "blend2",
 			"node_position": {
-				"x": -41.731201171875,
-				"y": -66.1159591674805
+				"x": -17.573543548584,
+				"y": -83.5650329589844
 			},
 			"parameters": {
 				"amount1": 0.12,
@@ -259,7 +283,7 @@
 				"y": 421.320983886719
 			},
 			"parameters": {
-				"op": 1
+				"op": 1.0
 			},
 			"seed_int": 0,
 			"type": "normal_map_convert"
@@ -272,7 +296,7 @@
 			},
 			"parameters": {
 				"buffer": 1.0,
-				"param2": 0,
+				"param2": 0.0,
 				"size": 10.0,
 				"strength": 1.0
 			},
@@ -314,17 +338,77 @@
 		{
 			"name": "gaussian_blur",
 			"node_position": {
-				"x": 567.671691894531,
-				"y": 14.0138702392578
+				"x": 407.425933837891,
+				"y": 30.1189708709717
 			},
 			"parameters": {
-				"param0": 11,
+				"param0": 11.0,
 				"param1": 1.0,
 				"param2": 0.0,
 				"param3": false
 			},
 			"seed_int": 0,
 			"type": "gaussian_blur"
+		},
+		{
+			"generic_size": 1,
+			"name": "warp",
+			"node_position": {
+				"x": -504.708404541016,
+				"y": -75.9634475708008
+			},
+			"parameters": {
+				"amount": 0.1,
+				"eps": 0.1,
+				"mode": 0.0
+			},
+			"seed_int": 0,
+			"type": "warp"
+		},
+		{
+			"name": "perlin",
+			"node_position": {
+				"x": -1001.62579345703,
+				"y": 171.475372314453
+			},
+			"parameters": {
+				"iterations": 4.0,
+				"persistence": 0.15,
+				"scale_x": 1.0,
+				"scale_y": 23.0
+			},
+			"seed_int": 0,
+			"type": "perlin"
+		},
+		{
+			"generic_size": 1,
+			"name": "warp_2",
+			"node_position": {
+				"x": -520.1279296875,
+				"y": -341.116333007812
+			},
+			"parameters": {
+				"amount": 0.1,
+				"eps": 0.1,
+				"mode": 0.0
+			},
+			"seed_int": 0,
+			"type": "warp"
+		},
+		{
+			"name": "perlin_2",
+			"node_position": {
+				"x": -734.672241210938,
+				"y": -197.76203918457
+			},
+			"parameters": {
+				"iterations": 3.0,
+				"persistence": 0.5,
+				"scale_x": 1.0,
+				"scale_y": 1.0
+			},
+			"seed_int": 0,
+			"type": "perlin"
 		}
 	],
 	"parameters": {

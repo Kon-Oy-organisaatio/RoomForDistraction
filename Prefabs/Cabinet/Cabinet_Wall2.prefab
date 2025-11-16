@@ -67,5 +67,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -8859299550497757236, guid: 6a270d5ed16f18f43aa6c14a8972ddb4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7326916488929112181}
   m_SourcePrefab: {fileID: 100100000, guid: 6a270d5ed16f18f43aa6c14a8972ddb4, type: 3}
+--- !u!1 &1051154427625863984 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8859299550497757236, guid: 6a270d5ed16f18f43aa6c14a8972ddb4, type: 3}
+  m_PrefabInstance: {fileID: 836265036178152700}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7326916488929112181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051154427625863984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a91fb61b22240a34bbee79d50943ad03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractObject
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 5
+  relativePosition: {x: 0, y: 0, z: 0}
+  relativeRotation: {x: 0, y: 90, z: 0}
+  animationDuration: 0.5

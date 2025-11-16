@@ -58,12 +58,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 8185f3b21be39ac41b4e0d4925141ba6, type: 2}
     - target: {fileID: 919132149155446097, guid: 0c7a23ea38f91114da759d653e0cb950, type: 3}
       propertyPath: m_Name
-      value: Oven
+      value: InductionOven
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5092708244707826562, guid: 0c7a23ea38f91114da759d653e0cb950, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8620850904831324547}
     - targetCorrespondingSourceObject: {fileID: 2056901520811228412, guid: 0c7a23ea38f91114da759d653e0cb950, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8984582126225377538}
@@ -94,3 +97,25 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.006, y: 0.005999999, z: 0.006999999}
   m_Center: {x: 0, y: -0.00049999997, z: 0}
+--- !u!1 &9049292888649926730 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5092708244707826562, guid: 0c7a23ea38f91114da759d653e0cb950, type: 3}
+  m_PrefabInstance: {fileID: 4267552921042932680}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8620850904831324547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9049292888649926730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a91fb61b22240a34bbee79d50943ad03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractObject
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 5
+  relativePosition: {x: 0, y: 0, z: 0}
+  relativeRotation: {x: 0, y: 0, z: 90}
+  animationDuration: 0.5

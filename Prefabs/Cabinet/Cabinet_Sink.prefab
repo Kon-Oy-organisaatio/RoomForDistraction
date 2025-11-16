@@ -111,7 +111,57 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1756443162215770420, guid: 2e586be51b226664fb27e202171deab0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2671588168524656774}
+    - targetCorrespondingSourceObject: {fileID: -6237935530931261006, guid: 2e586be51b226664fb27e202171deab0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9122779043963241155}
+    - targetCorrespondingSourceObject: {fileID: -4778917073291787575, guid: 2e586be51b226664fb27e202171deab0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3572558571451082112}
   m_SourcePrefab: {fileID: 100100000, guid: 2e586be51b226664fb27e202171deab0, type: 3}
+--- !u!1 &180884819916326980 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6237935530931261006, guid: 2e586be51b226664fb27e202171deab0, type: 3}
+  m_PrefabInstance: {fileID: 3165123880366012918}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &9122779043963241155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180884819916326980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a91fb61b22240a34bbee79d50943ad03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractObject
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 5
+  relativePosition: {x: 0, y: 0, z: 0}
+  relativeRotation: {x: 0, y: -90, z: 0}
+  animationDuration: 0.5
+--- !u!1 &1603606216602729279 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4778917073291787575, guid: 2e586be51b226664fb27e202171deab0, type: 3}
+  m_PrefabInstance: {fileID: 3165123880366012918}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3572558571451082112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603606216602729279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a91fb61b22240a34bbee79d50943ad03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractObject
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 5
+  relativePosition: {x: 0, y: 0, z: 0}
+  relativeRotation: {x: 0, y: 90, z: 0}
+  animationDuration: 0.5
 --- !u!1 &3714595195620856002 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1756443162215770420, guid: 2e586be51b226664fb27e202171deab0, type: 3}
