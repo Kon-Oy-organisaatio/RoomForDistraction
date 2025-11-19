@@ -1,3 +1,3 @@
-Pelin assetteja.  
+Pelin repo
 
 ![alt text](image.png)
