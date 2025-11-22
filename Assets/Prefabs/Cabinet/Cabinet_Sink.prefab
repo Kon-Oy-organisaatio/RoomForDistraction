@@ -67,7 +67,7 @@ PrefabInstance:
     - target: {fileID: 340699166601600245, guid: 2e586be51b226664fb27e202171deab0, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 5570207cac677be4cb225ef53cd016f4, type: 2}
+      objectReference: {fileID: 2100000, guid: a12a548d0150b5147a860beb65e78ab2, type: 2}
     - target: {fileID: 737649634146897680, guid: 2e586be51b226664fb27e202171deab0, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -111,7 +111,7 @@ MonoBehaviour:
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 5
   relativePosition: {x: 0, y: 0, z: 0}
-  relativeRotation: {x: 0, y: 90, z: 0}
+  relativeRotation: {x: 0, y: 85, z: 0}
   animationDuration: 0.5
   useAction: Open/Close
 --- !u!1 &8740484821214613051 stripped
@@ -134,6 +134,6 @@ MonoBehaviour:
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 5
   relativePosition: {x: 0, y: 0, z: 0}
-  relativeRotation: {x: 0, y: -90, z: 0}
+  relativeRotation: {x: 0, y: -85, z: 0}
   animationDuration: 0.5
   useAction: Open/Close
