@@ -48,10 +48,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8075437556188153882, guid: aff3d23952713cb4c832ef97bbf223ed, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ff3ea3d49de0cbf46b52699d2209c953, type: 2}
+    - target: {fileID: -8075437556188153882, guid: aff3d23952713cb4c832ef97bbf223ed, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9b43cfd370012024198d1fcc3c1ad90a, type: 2}
     - target: {fileID: -5559202710428548905, guid: aff3d23952713cb4c832ef97bbf223ed, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: c09d3ae84d4ccaf4fbc3ae880d89b046, type: 2}
+      objectReference: {fileID: 2100000, guid: ff3ea3d49de0cbf46b52699d2209c953, type: 2}
     - target: {fileID: -3903717161547482185, guid: aff3d23952713cb4c832ef97bbf223ed, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -64,6 +72,14 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: 8185f3b21be39ac41b4e0d4925141ba6, type: 2}
+    - target: {fileID: 226186316431650241, guid: aff3d23952713cb4c832ef97bbf223ed, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ff3ea3d49de0cbf46b52699d2209c953, type: 2}
+    - target: {fileID: 226186316431650241, guid: aff3d23952713cb4c832ef97bbf223ed, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9b43cfd370012024198d1fcc3c1ad90a, type: 2}
     - target: {fileID: 280936700391525606, guid: aff3d23952713cb4c832ef97bbf223ed, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -111,8 +127,9 @@ MonoBehaviour:
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 5
   relativePosition: {x: 0, y: 0, z: 0}
-  relativeRotation: {x: 0, y: -90, z: 0}
+  relativeRotation: {x: 0, y: -85, z: 0}
   animationDuration: 0.5
+  useAction: Open/Close
 --- !u!1 &5050834887477741479 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3903717161547482185, guid: aff3d23952713cb4c832ef97bbf223ed, type: 3}
@@ -133,5 +150,6 @@ MonoBehaviour:
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 5
   relativePosition: {x: 0, y: 0, z: 0}
-  relativeRotation: {x: 0, y: 90, z: 0}
+  relativeRotation: {x: 0, y: 85, z: 0}
   animationDuration: 0.5
+  useAction: Open/Close

@@ -55,7 +55,7 @@ PrefabInstance:
     - target: {fileID: -2383212594042892589, guid: 6a270d5ed16f18f43aa6c14a8972ddb4, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: c09d3ae84d4ccaf4fbc3ae880d89b046, type: 2}
+      objectReference: {fileID: 2100000, guid: ff3ea3d49de0cbf46b52699d2209c953, type: 2}
     - target: {fileID: -305091885687274788, guid: 6a270d5ed16f18f43aa6c14a8972ddb4, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -68,6 +68,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_Wall2
       objectReference: {fileID: 0}
+    - target: {fileID: 2540183505488792791, guid: 6a270d5ed16f18f43aa6c14a8972ddb4, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ff3ea3d49de0cbf46b52699d2209c953, type: 2}
+    - target: {fileID: 2540183505488792791, guid: 6a270d5ed16f18f43aa6c14a8972ddb4, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9b43cfd370012024198d1fcc3c1ad90a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -96,5 +104,6 @@ MonoBehaviour:
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 5
   relativePosition: {x: 0, y: 0, z: 0}
-  relativeRotation: {x: 0, y: 90, z: 0}
+  relativeRotation: {x: 0, y: 85, z: 0}
   animationDuration: 0.5
+  useAction: Open/Close
