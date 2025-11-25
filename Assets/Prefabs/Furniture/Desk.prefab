@@ -167,12 +167,21 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -2642929741691587938, guid: cccf335de11c2464ba6ba6c398c8b430, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2970889580100481196}
+    - targetCorrespondingSourceObject: {fileID: -2642929741691587938, guid: cccf335de11c2464ba6ba6c398c8b430, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6702713108021381903}
     - targetCorrespondingSourceObject: {fileID: 5402656848919578657, guid: cccf335de11c2464ba6ba6c398c8b430, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6654645054312039507}
+    - targetCorrespondingSourceObject: {fileID: 5402656848919578657, guid: cccf335de11c2464ba6ba6c398c8b430, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5274816261832299756}
     - targetCorrespondingSourceObject: {fileID: 3460144667963281312, guid: cccf335de11c2464ba6ba6c398c8b430, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3751679928330025530}
+    - targetCorrespondingSourceObject: {fileID: 3460144667963281312, guid: cccf335de11c2464ba6ba6c398c8b430, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2204765968089097816}
   m_SourcePrefab: {fileID: 100100000, guid: cccf335de11c2464ba6ba6c398c8b430, type: 3}
 --- !u!1 &3826113759935718232 stripped
 GameObject:
@@ -197,6 +206,28 @@ MonoBehaviour:
   relativeRotation: {x: 0, y: 0, z: 0}
   animationDuration: 0.5
   useAction: Open/Close
+  activationTarget: {fileID: 0}
+--- !u!65 &2204765968089097816
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3826113759935718232}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.019999998, y: 0.019999994, z: 0.044786718}
+  m_Center: {x: 0, y: 0, z: -0.012393362}
 --- !u!1 &5757824398865523929 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5402656848919578657, guid: cccf335de11c2464ba6ba6c398c8b430, type: 3}
@@ -220,6 +251,28 @@ MonoBehaviour:
   relativeRotation: {x: 0, y: 0, z: 0}
   animationDuration: 0.5
   useAction: Open/Close
+  activationTarget: {fileID: 0}
+--- !u!65 &5274816261832299756
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5757824398865523929}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.019999998, y: 0.019999994, z: 0.019999998}
+  m_Center: {x: 0, y: -9.313226e-10, z: -0.0000000037252903}
 --- !u!1 &6795822334733344358 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2642929741691587938, guid: cccf335de11c2464ba6ba6c398c8b430, type: 3}
@@ -243,3 +296,25 @@ MonoBehaviour:
   relativeRotation: {x: 0, y: 0, z: 0}
   animationDuration: 0.5
   useAction: Open/Close
+  activationTarget: {fileID: 0}
+--- !u!65 &6702713108021381903
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6795822334733344358}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.019999998, y: 0.019999994, z: 0.019999998}
+  m_Center: {x: 0, y: -9.313226e-10, z: 0.0000000027939677}
