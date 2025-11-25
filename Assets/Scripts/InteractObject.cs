@@ -46,9 +46,7 @@ public class InteractObject : MonoBehaviour, IInteractable
     public void Interact()
     {
         if (currentAnimation != null)
-        {
-            StopCoroutine(currentAnimation);
-        }
+            return;
         isOpen = !isOpen;
         currentAnimation = StartCoroutine(AnimateDrawer(isOpen));
     }
@@ -73,6 +71,7 @@ public class InteractObject : MonoBehaviour, IInteractable
 
         transform.localPosition = targetPosition;
         transform.localRotation = targetRotation;
+        currentAnimation = null;
     }
 
 
@@ -97,6 +96,4 @@ public class InteractObject : MonoBehaviour, IInteractable
         }
     }
 #endif
-
-
 }
