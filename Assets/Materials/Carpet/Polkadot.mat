@@ -133,16 +133,16 @@ Material:
     - _XRMotionVectorsPass: 1
     - _ZWrite: 1
     m_Colors:
-    - _BackgroundColor: {r: 0, g: 0.3953789, b: 0.44025147, a: 1}
+    - _BackgroundColor: {r: 0.9176471, g: 0.8078432, b: 0.40000004, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Normal_Offset: {r: 0, g: 0, b: 0, a: 0}
     - _Normal_Tiling: {r: 2.6, g: 13.8, b: 0, a: 0}
     - _Offset: {r: 0.17, g: 0, b: 0, a: 0}
-    - _PatternColor: {r: 1, g: 0.3928653, b: 0, a: 1}
+    - _PatternColor: {r: 0.49803925, g: 0.49803925, b: 0.49803925, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _Tiling: {r: 100, g: 2, b: 0, a: 0}
+    - _Tiling: {r: 150, g: 3, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &7963746771998097164
