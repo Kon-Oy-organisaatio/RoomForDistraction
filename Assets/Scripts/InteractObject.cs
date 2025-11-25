@@ -8,11 +8,18 @@ public class InteractObject : MonoBehaviour, IInteractable
     public Color outlineColor = Color.white;
     public float outlineWidth = 5f;
 
-    private bool isOpen = false;
+    private bool state = false;
+    [Tooltip("Relative position to move when opened")]
     public Vector3 relativePosition;
+    [Tooltip("Relative rotation to apply when opened")]
     public Vector3 relativeRotation;
+    [Tooltip("Duration of the open/close animation in seconds")]
     public float animationDuration = 0.5f;
+    [Tooltip("Action text for use, format: 'Open/Close'")]
     public string useAction = "Open/Close";
+    [Tooltip("Object to activate/deactivate on interaction")]
+    public GameObject activationTarget;
+    
     private Vector3 startPosition;
     private Quaternion startRotation;
     private Coroutine currentAnimation;
@@ -30,7 +37,7 @@ public class InteractObject : MonoBehaviour, IInteractable
 
     public string GetUseAction()
     {
-        return useAction.Split('/')[isOpen ? 1 : 0].Trim();
+        return useAction.Split('/')[state ? 1 : 0].Trim();
     }
 
     public void ShowOutline()
@@ -47,11 +54,11 @@ public class InteractObject : MonoBehaviour, IInteractable
     {
         if (currentAnimation != null)
             return;
-        isOpen = !isOpen;
-        currentAnimation = StartCoroutine(AnimateDrawer(isOpen));
+        state = !state;
+        currentAnimation = StartCoroutine(Animate(state));
     }
 
-    private IEnumerator AnimateDrawer(bool open)
+    private IEnumerator Animate(bool open)
     {
         Vector3 targetPosition = open ? startPosition + relativePosition : startPosition;
         Quaternion targetRotation = open ? Quaternion.Euler(relativeRotation) * startRotation : startRotation;
@@ -67,6 +74,10 @@ public class InteractObject : MonoBehaviour, IInteractable
             transform.localRotation = Quaternion.Slerp(initialRotation, targetRotation, t);
             elapsed += Time.deltaTime;
             yield return null;
+        }
+        if (activationTarget != null)
+        {
+            activationTarget.SetActive(open);
         }
 
         transform.localPosition = targetPosition;
