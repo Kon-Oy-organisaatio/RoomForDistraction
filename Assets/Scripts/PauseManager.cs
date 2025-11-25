@@ -5,7 +5,7 @@ public class PauseManager : MonoBehaviour
 {
     [HideInInspector]
     public bool isPaused = false;
-    [Tooltip("Canvas for the pause menu")]
+    [Tooltip("Canvas to enable when paused")]
     public Canvas pauseMenuCanvas;
 
     private void LateUpdate ()
@@ -46,4 +46,4 @@ public class PauseManager : MonoBehaviour
     {
         ResumeGame();
     }
-}
+}   
