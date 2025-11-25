@@ -1,6 +1,5 @@
 using UnityEngine;
 using System.Collections;
-using Mono.Cecil.Cil;
 
 [System.Serializable]
 public class Sound
