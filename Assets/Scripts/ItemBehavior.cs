@@ -2,10 +2,12 @@ using UnityEngine;
 
 public class ItemBehavior : MonoBehaviour, IInteractable
 {
+    [Header("Outline Settings")]
     private Outline outline;
     public Color outlineColor = Color.white;
     public float outlineWidth = 5f;
 
+    [Header("Item Settings")]
     public string useAction = "Pickup Item";
     public string itemName = "Item";
 
@@ -16,6 +18,7 @@ public class ItemBehavior : MonoBehaviour, IInteractable
         outline.OutlineColor = outlineColor;
         outline.OutlineWidth = outlineWidth;
         outline.enabled = false;
+        gameObject.layer = LayerMask.NameToLayer("Interact");
     }
 
     public string GetUseAction()

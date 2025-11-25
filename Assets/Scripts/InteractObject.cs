@@ -4,11 +4,14 @@ using System.Collections;
 
 public class InteractObject : MonoBehaviour, IInteractable
 {
-    private Outline outline;
+    [Header("Outline Settings")]
+    [Tooltip("Outline color")]
     public Color outlineColor = Color.white;
+    [Tooltip("Outline width")]
     public float outlineWidth = 5f;
+    private Outline outline;
 
-    private bool state = false;
+    [Header("Interaction Settings")]
     [Tooltip("Relative position to move when opened")]
     public Vector3 relativePosition;
     [Tooltip("Relative rotation to apply when opened")]
@@ -19,6 +22,7 @@ public class InteractObject : MonoBehaviour, IInteractable
     public string useAction = "Open/Close";
     [Tooltip("Object to activate/deactivate on interaction")]
     public GameObject activationTarget;
+    private bool state = false;
     
     private Vector3 startPosition;
     private Quaternion startRotation;
@@ -33,6 +37,7 @@ public class InteractObject : MonoBehaviour, IInteractable
         outline.enabled = false;
         startPosition = transform.localPosition;
         startRotation = transform.localRotation;
+        gameObject.layer = LayerMask.NameToLayer("Interact");
     }
 
     public string GetUseAction()
@@ -86,25 +91,25 @@ public class InteractObject : MonoBehaviour, IInteractable
     }
 
 
-#if UNITY_EDITOR
-    public void Update()
-    {
-        if (Keyboard.current != null)
-        {
-            if (Keyboard.current.eKey.wasPressedThisFrame)
-            {
-                Interact();
-            }
-            if (Keyboard.current.fKey.isPressed)
-            {
-                ShowOutline();
-            }
-            else
-            {
-                HideOutline();
-            }
-            return;
-        }
-    }
-#endif
+// #if UNITY_EDITOR
+//     public void Update()
+//     {
+//         if (Keyboard.current != null)
+//         {
+//             if (Keyboard.current.eKey.wasPressedThisFrame)
+//             {
+//                 Interact();
+//             }
+//             if (Keyboard.current.fKey.isPressed)
+//             {
+//                 ShowOutline();
+//             }
+//             else
+//             {
+//                 HideOutline();
+//             }
+//             return;
+//         }
+//     }
+// #endif
 }
