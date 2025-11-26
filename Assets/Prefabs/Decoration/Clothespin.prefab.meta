@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Prefabs/Decoration/Clothespin.prefab.meta
 guid: 8cfbb179aaa9f8d41929d23c31158d17
+========
+guid: 8c1dfe8627309a34186ef391d0982c18
+>>>>>>>> abdb66c194ea347de0546b4900f11d66f5948871:Assets/Prefabs/Collectibles/remote.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 
