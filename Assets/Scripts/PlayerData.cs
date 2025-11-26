@@ -4,4 +4,6 @@ using UnityEngine;
 public class PlayerData : ScriptableObject
 {
     public string PlayerName;
+    public float PlayerSpeedMultiplier = 1f;
+    public float AnimationMultiplier = 1f;
 }
