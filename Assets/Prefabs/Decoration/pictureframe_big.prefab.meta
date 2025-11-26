@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Prefabs/Decoration/pictureframe_big.prefab.meta
 guid: 6b4fd52b0d7fc2848afe7224ed5a89f1
+========
+guid: 8c1dfe8627309a34186ef391d0982c18
+>>>>>>>> 0401bd393d1aea0ea21458a6bfd7d74a91d43add:Assets/Prefabs/Collectibles/remote.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 
