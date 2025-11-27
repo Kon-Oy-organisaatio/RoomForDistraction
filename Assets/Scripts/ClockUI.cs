@@ -29,6 +29,8 @@ public class ClockUI: MonoBehaviour
     {
         float percent = currentTime / totalTime;
         float degrees = percent * 360f;
+        if (degrees < 0f) degrees = 0f;
+        if (degrees > 360f) degrees = 360f;
         if (degrees <= 180f)
         {
             RightFill.transform.rotation = Quaternion.Euler(0f, 0f, degrees);
