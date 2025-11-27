@@ -4,9 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader: MonoBehaviour
 {
-    [Tooltip("Name of the scene to load")]
-    public string sceneToLoad;
-    public void LoadScene()
+    public void LoadScene(string sceneToLoad)
     {
         SceneManager.LoadScene(sceneToLoad);
     }
