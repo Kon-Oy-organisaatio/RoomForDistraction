@@ -7,13 +7,13 @@ public class GameManager : MonoBehaviour
     public ScoreManager scoreManager;
     //public ItemManager itemManager;
     //public ChecklistUI checklistUI;
-    //public ClockUI clockUI;
+    public ClockUI clockUI;
     //public SceneLoader sceneLoader;
     //public HighscoreManager highscoreManager;
     public PauseManager pauseManager;
 
     private float gameTime = 0f; // temp
-    private float gameDuration = 30f; // temp
+    public float gameDuration = 30f; // temp
 
     // täällä vai PauseManagerissa?
     public Canvas gameOverCanvas;
@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
     {
         pauseManager.EndGame();
         gameOverCanvas.enabled = true;
-        //clockUI.UpdateClock(gameDuration, gameDuration);
+        clockUI.UpdateClock(gameDuration, gameDuration);
         Debug.Log("GameManager: Game Over!");
         // string collectedItems = checklistUI/itemManager.GetCollectedItems();
         //highscoreManager.AddScore(playerData.name, scoreManager.GetScore(), gameTime, collectedItems);
@@ -60,11 +60,11 @@ public class GameManager : MonoBehaviour
         if (gameTime >= gameDuration)
         {
             OnGameOver();
-            //clockUI.UpdateClock(gameDuration, gameDuration);
+            clockUI.UpdateClock(gameDuration, gameDuration);
         }
         else
         {
-            //clockUI.UpdateClock(gameTime, gameDuration);
+            clockUI.UpdateClock(gameTime, gameDuration);
         }
     }
 
