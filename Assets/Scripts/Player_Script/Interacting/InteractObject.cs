@@ -35,6 +35,7 @@ public class InteractObject : MonoBehaviour, IInteractable
     [Tooltip("Audio to play on close")]
     public AudioClip closeAudio;
     private bool state = false;
+    private Vector3 initialScale;
 
     
     private Vector3 startPosition;
@@ -55,10 +56,14 @@ public class InteractObject : MonoBehaviour, IInteractable
         startRotation = objectToAnimate.transform.localRotation;
         startScale = objectToAnimate.transform.localScale;
         gameObject.layer = LayerMask.NameToLayer("Interact");
+        initialScale = objectToAnimate.transform.localScale;
         for (int i = 0; i < 3; i++)
         {
             if ( targetScale[i] == 0)
-                targetScale[i] = 1;
+            {
+                targetScale[i] = initialScale[i];
+            }
+                
         }
     }
 
@@ -69,11 +74,13 @@ public class InteractObject : MonoBehaviour, IInteractable
 
     public void ShowOutline()
     {
+        // Debug.Log("Showing outline on " + objectToOutline.name);
         outline.enabled = true;
     }
 
     public void HideOutline()
     {
+        // Debug.Log("Hiding outline on " + objectToOutline.name);
         outline.enabled = false;
     }
 
@@ -87,7 +94,7 @@ public class InteractObject : MonoBehaviour, IInteractable
 
     public string GetDescription()
     {
-        return "basic interact";
+        return GetUseAction();
     }
 
     private IEnumerator Animate(bool open)
@@ -140,27 +147,4 @@ public class InteractObject : MonoBehaviour, IInteractable
 
         currentAnimation = null;
     }
-
-
-#if UNITY_EDITOR
-    public void Update()
-    {
-        if (Keyboard.current != null)
-        {
-            if (Keyboard.current.eKey.wasPressedThisFrame)
-            {
-                Interact();
-            }
-            if (Keyboard.current.fKey.isPressed)
-            {
-                ShowOutline();
-            }
-            else
-            {
-                HideOutline();
-            }
-            return;
-        }
-    }
-#endif
 }
