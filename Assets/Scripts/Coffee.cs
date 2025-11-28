@@ -47,4 +47,9 @@ public class Coffee : MonoBehaviour, IInteractable
         gameObject.layer = LayerMask.NameToLayer("Default");
     }
 
+    public string GetDescription()
+    {
+        return "Coffee interact";
+    }
+
 }
