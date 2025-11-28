@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     //public SceneLoader sceneLoader;
     //public HighscoreManager highscoreManager;
     public PauseManager pauseManager;
+    public ItemPool itemPool;
 
     private float gameTime = 0f; // temp
     public float gameDuration = 30f; // temp
