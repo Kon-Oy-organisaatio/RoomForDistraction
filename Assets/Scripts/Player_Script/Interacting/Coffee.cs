@@ -18,38 +18,35 @@ public class Coffee : MonoBehaviour, IInteractable
         outline.OutlineColor = outlineColor;
         outline.OutlineWidth = outlineWidth;
         outline.enabled = false;
-        gameObject.layer = LayerMask.NameToLayer("Interact");
-    }
-
-    public string GetUseAction()
-    {
-        return useAction;
     }
 
     public void ShowOutline()
     {
-        outline.enabled = true;
+        if (outline != null)
+            outline.enabled = true;
     }
 
     public void HideOutline()
     {
-        outline.enabled = false;
+        if (outline != null)
+            outline.enabled = false;
+    }
+
+    public bool IsDisabled()
+    {
+        return false;
     }
 
     public void Interact()
     {
         GameManager gameManager = Helper.GetGameManager();
         gameManager.OnItemUse(itemName);
-        foreach (Transform child in transform)
-        {
-            Destroy(child.gameObject);
-        }
-        gameObject.layer = LayerMask.NameToLayer("Default");
+        Destroy(gameObject);
     }
 
     public string GetDescription()
     {
-        return "Coffee interact";
+        return useAction;
     }
 
 }

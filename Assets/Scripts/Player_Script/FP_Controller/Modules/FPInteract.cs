@@ -40,22 +40,33 @@ namespace Player_Script
         {
             Ray ray = mainCamera.ViewportPointToRay(Vector3.one / 2f);
             RaycastHit hit;
-            currentInteractable = null;
+            if ( currentInteractable != null) 
+            {
+                currentInteractable.HideOutline();
+                currentInteractable = null;
+            }
 
             bool hitSomething = false;
+
 
             if(Physics.Raycast(ray, out hit, interactionDistance))
             {
                 IInteractable interactable = hit.collider.GetComponent<IInteractable>();
 
-                if(interactable != null)
+                if(interactable != null && !interactable.IsDisabled())
                 {
                     currentInteractable = interactable;
                     hitSomething = true;
                     interactionText.text = interactable.GetDescription();
+                    currentInteractable.ShowOutline();
                 }
             }
             interactionUI.SetActive(hitSomething);
+        }
+
+        public void OnDrawGizmos() {
+            Gizmos.color = Color.green;
+            Gizmos.DrawRay(mainCamera.transform.position, mainCamera.transform.forward * interactionDistance);
         }
     }
 }

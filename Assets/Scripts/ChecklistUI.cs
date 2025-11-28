@@ -82,6 +82,19 @@ public class ChecklistUI : MonoBehaviour
         items.Add(new ItemEntry(itemName) { isChecked = true, isCorrect = false });
     }
 
+    public string GetCollectedItems()
+    {
+        List<string> collected = new List<string>();
+        foreach (ItemEntry item in items)
+        {
+            if (item.isChecked)
+            {
+                collected.Add(item.itemName);
+            }
+        }
+        return string.Join(", ", collected);
+    }
+
     public void RedrawList()
     {
         int index = 0;

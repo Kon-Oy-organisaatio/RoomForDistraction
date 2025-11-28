@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1312238583499201183}
   - component: {fileID: 5161040571817125041}
   - component: {fileID: 6921356121174686404}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Coffee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,6 +123,10 @@ PrefabInstance:
       value: Mug
       objectReference: {fileID: 0}
     - target: {fileID: 3748508342413615959, guid: 00876e73d98f923449e16bd5f8873066, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3748508342413615959, guid: 00876e73d98f923449e16bd5f8873066, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -184,7 +188,13 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4561777907916519917, guid: 00876e73d98f923449e16bd5f8873066, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2119937236361763984}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3748508342413615959, guid: 00876e73d98f923449e16bd5f8873066, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 719805947255898670}
+    - targetCorrespondingSourceObject: {fileID: 3748508342413615959, guid: 00876e73d98f923449e16bd5f8873066, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2444609551679837015}
   m_SourcePrefab: {fileID: 100100000, guid: 00876e73d98f923449e16bd5f8873066, type: 3}
 --- !u!4 &3847670639298299585 stripped
 Transform:
@@ -196,6 +206,43 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3748508342413615959, guid: 00876e73d98f923449e16bd5f8873066, type: 3}
   m_PrefabInstance: {fileID: 732711082803986220}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &719805947255898670
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4480655719315741819}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.02341079, y: 0.018277494, z: 0.019956527}
+  m_Center: {x: -0.002566675, y: -0.000000118899024, z: 0.000021745718}
+--- !u!114 &2444609551679837015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4480655719315741819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab5713897c2b5384096105fd1669899d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 5
+  useAction: Drink
+  itemName: Coffee
 --- !u!1001 &6441311142210423234
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -260,6 +307,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7299759429068972520, guid: f45b33d69d0d1884f87138563492cee7, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 745264460266849696, guid: f45b33d69d0d1884f87138563492cee7, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -267,6 +318,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f45b33d69d0d1884f87138563492cee7, type: 3}
       propertyPath: m_Name
       value: Moccamaster
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f45b33d69d0d1884f87138563492cee7, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1245571365865841831, guid: f45b33d69d0d1884f87138563492cee7, type: 3}
       propertyPath: m_LocalScale.x
@@ -320,6 +375,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[6]'
       value: 
       objectReference: {fileID: 2100000, guid: e81c70d3cb9c4bc49be84a53f12ca8f2, type: 2}
+    - target: {fileID: 8831567065216400070, guid: f45b33d69d0d1884f87138563492cee7, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -329,7 +388,10 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f45b33d69d0d1884f87138563492cee7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6579477754376865093}
+      addedObject: {fileID: 4544266247566668248}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f45b33d69d0d1884f87138563492cee7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5944810105449237043}
   m_SourcePrefab: {fileID: 100100000, guid: f45b33d69d0d1884f87138563492cee7, type: 3}
 --- !u!1 &2590736571375612676 stripped
 GameObject:
@@ -341,7 +403,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f45b33d69d0d1884f87138563492cee7, type: 3}
   m_PrefabInstance: {fileID: 6441311142210423234}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6579477754376865093
+--- !u!114 &4544266247566668248
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -353,7 +415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a91fb61b22240a34bbee79d50943ad03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToOutline: {fileID: 6171421924002559123}
+  objectToOutline: {fileID: 0}
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 5
   objectToAnimate: {fileID: 2590736571375612676}
@@ -366,6 +428,28 @@ MonoBehaviour:
   disableInteractionAfterAnimation: 1
   openAudio: {fileID: 8300000, guid: 3375ddd496f32a04ea792ebc3c52fb70, type: 3}
   closeAudio: {fileID: 0}
+  disabled: 0
+--- !u!65 &5944810105449237043
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6171421924002559123}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.3, y: 0.4, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &6840575472767249961 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f45b33d69d0d1884f87138563492cee7, type: 3}
