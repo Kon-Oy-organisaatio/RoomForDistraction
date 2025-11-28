@@ -1,11 +1,12 @@
 using UnityEngine;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
     [Tooltip("Player data scriptable object")]
     public PlayerData playerData;
     public ScoreManager scoreManager;
-    //public ItemManager itemManager;
+    public ItemManager itemManager;
     public ChecklistUI checklistUI;
     public ClockUI clockUI;
     //public SceneLoader sceneLoader;
@@ -24,15 +25,31 @@ public class GameManager : MonoBehaviour
         playerData.PlayerSpeedMultiplier = 1f;
         playerData.AnimationMultiplier = 1f;
         pauseManager.isGameOver = false;
-        //itemManager.InitializeItems();
+
+        StartCoroutine(DelayedInit());
     }
 
+    private IEnumerator DelayedInit()
+    {
+        yield return null; // wait one frame so ChecklistUI.Start() runs
+        if (itemManager != null)
+        {
+            itemManager.InitializeItems();
+        }
+    }
     public void OnItemPickup(string itemName)
     {
         Debug.Log("GameManager: Item picked up - " + itemName);
-        //if (itemManager.IsCorrectItem(itemName)) scoreManager.AddScore(100);
+
+        // Delegate to ItemManager
+        if (itemManager != null)
+        {
+            itemManager.OnItemPickup(itemName);
+        }
+
+        // Optional scoring logic
+        // if (itemManager.IsCorrectItem(itemName)) scoreManager.AddScore(100);
         // else scoreManager.AddScore(-100);
-        checklistUI.UpdateChecklist(itemName);
     }
 
     public void OnItemUse(string itemName)

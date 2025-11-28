@@ -27,31 +27,54 @@ public class ChecklistUI : MonoBehaviour
     public Color defaultColor;
     public Color correctColor;
     public Color incorrectColor;
+
     private TMP_Text[] textElements;
     private Image[] imageElements;
 
-
-    public void Start()
+    public void Awake()
     {
         if (Notelist == null)
         {
             Notelist = GetComponent<Canvas>();
         }
-        items = new List<ItemEntry> {};
-        textElements = Notelist.transform.Find("Items").GetComponentsInChildren<TMP_Text>();
-        imageElements = Notelist.transform.Find("Strikes").GetComponentsInChildren<Image>();
-        for (int i = 0; i < textElements.Length; i++)
+
+        items = new List<ItemEntry>();
+
+        // Cache UI references
+        Transform itemsRoot = Notelist.transform.Find("Items");
+        Transform strikesRoot = Notelist.transform.Find("Strikes");
+
+        if (itemsRoot != null)
         {
-            textElements[i].text = "";
-            textElements[i].color = defaultColor;
-            imageElements[i].enabled = false;
+            textElements = itemsRoot.GetComponentsInChildren<TMP_Text>();
         }
-        #if UNITY_EDITOR
-            StartCoroutine(UpdateChecklist());
-        #endif
+        if (strikesRoot != null)
+        {
+            imageElements = strikesRoot.GetComponentsInChildren<Image>();
+        }
+
+        // Initialize UI elements
+        if (textElements != null && imageElements != null)
+        {
+            for (int i = 0; i < textElements.Length; i++)
+            {
+                textElements[i].text = "";
+                textElements[i].color = defaultColor;
+                if (i < imageElements.Length)
+                {
+                    imageElements[i].enabled = false;
+                }
+            }
+        }
     }
 
-    #if UNITY_EDITOR
+#if UNITY_EDITOR
+    public void Start()
+    {
+        // Editor-only auto-refresh for debugging
+        StartCoroutine(UpdateChecklist());
+    }
+
     IEnumerator UpdateChecklist()
     {
         while (true)
@@ -60,7 +83,7 @@ public class ChecklistUI : MonoBehaviour
             yield return new WaitForSeconds(1f);
         }
     }
-    #endif
+#endif
 
     public void AddItem(string itemName)
     {
@@ -79,6 +102,7 @@ public class ChecklistUI : MonoBehaviour
                 return;
             }
         }
+        // If not found, add as incorrect
         items.Add(new ItemEntry(itemName) { isChecked = true, isCorrect = false });
     }
 
@@ -97,33 +121,34 @@ public class ChecklistUI : MonoBehaviour
 
     public void RedrawList()
     {
+        if (textElements == null || imageElements == null)
+        {
+            Debug.LogWarning("ChecklistUI: UI elements not initialized yet.");
+            return;
+        }
+
         int index = 0;
         foreach (ItemEntry item in items)
         {
             if (index >= textElements.Length)
                 break;
+
             TMP_Text textElement = textElements[index];
             Image imageElement = imageElements[index];
+
             textElement.text = item.itemName;
+
             if (item.isChecked)
             {
-                if (item.isCorrect)
-                {
-                    textElement.color = correctColor;
-                }
-                else
-                {
-                    textElement.color = incorrectColor;
-                }
-                if (item.isChecked)
-                {
-                    imageElement.enabled = true;
-                }
-                else
-                {
-                    imageElement.enabled = false;
-                }
+                textElement.color = item.isCorrect ? correctColor : incorrectColor;
+                imageElement.enabled = true;
             }
+            else
+            {
+                textElement.color = defaultColor;
+                imageElement.enabled = false;
+            }
+
             index++;
         }
     }
