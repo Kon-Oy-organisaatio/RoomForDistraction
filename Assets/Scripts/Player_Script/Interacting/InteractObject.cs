@@ -1,7 +1,5 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 using System.Collections;
-using Unity.VisualScripting;
 
 public class InteractObject : MonoBehaviour, IInteractable
 {
