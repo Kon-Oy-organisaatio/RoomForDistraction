@@ -18,22 +18,23 @@ public class ItemBehavior : MonoBehaviour, IInteractable
         outline.OutlineColor = outlineColor;
         outline.OutlineWidth = outlineWidth;
         outline.enabled = false;
-        gameObject.layer = LayerMask.NameToLayer("Interact");
     }
 
-    public string GetUseAction()
+    public bool IsDisabled()
     {
-        return useAction;
+        return false;
     }
 
     public void ShowOutline()
     {
-        outline.enabled = true;
+        if (outline != null)
+            outline.enabled = true;
     }
 
     public void HideOutline()
     {
-        outline.enabled = false;
+        if (outline != null)
+            outline.enabled = false;
     }
 
     public void Interact()
@@ -46,7 +47,7 @@ public class ItemBehavior : MonoBehaviour, IInteractable
 
     public string GetDescription()
     {
-        return "ItemBehavior interact";
+        return useAction;
     }
 
 }

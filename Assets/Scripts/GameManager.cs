@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
     public PlayerData playerData;
     public ScoreManager scoreManager;
     //public ItemManager itemManager;
-    //public ChecklistUI checklistUI;
+    public ChecklistUI checklistUI;
     public ClockUI clockUI;
     //public SceneLoader sceneLoader;
     //public HighscoreManager highscoreManager;
@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("GameManager: Item picked up - " + itemName);
         //if (itemManager.IsCorrectItem(itemName)) scoreManager.AddScore(100);
         // else scoreManager.AddScore(-100);
-        // checklistUI.UpdateChecklist(itemName);
+        checklistUI.UpdateChecklist(itemName);
     }
 
     public void OnItemUse(string itemName)
@@ -46,11 +46,11 @@ public class GameManager : MonoBehaviour
 
     public void OnGameOver()
     {
-        pauseManager.EndGame();
-        gameOverCanvas.enabled = true;
+        //pauseManager.EndGame();
+        //gameOverCanvas.enabled = true;
         clockUI.UpdateClock(gameDuration, gameDuration);
         Debug.Log("GameManager: Game Over!");
-        // string collectedItems = checklistUI/itemManager.GetCollectedItems();
+        string collectedItems = checklistUI.GetCollectedItems();
         //highscoreManager.AddScore(playerData.name, scoreManager.GetScore(), gameTime, collectedItems);
     }
 

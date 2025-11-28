@@ -16,13 +16,21 @@ namespace Player_Script
             {
                 if (Activity.IsActive(Crouch))
                 {
-                    return preset.crouchSpeed;
+                    return preset.crouchSpeed * speedMultiplier;
                 }
                 if (Activity.IsActive(Sprint))
                 {
-                    return preset.sprintSpeed;
+                    return preset.sprintSpeed * speedMultiplier;
                 }
-                return preset.walkSpeed;
+                return preset.walkSpeed * speedMultiplier;
+            }
+        }
+
+        float speedMultiplier
+        {
+            get
+            {
+                return Helper.GetGameManager().playerData.PlayerSpeedMultiplier;
             }
         }
 

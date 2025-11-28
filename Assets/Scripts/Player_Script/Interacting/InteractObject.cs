@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
+using Unity.VisualScripting;
 
 public class InteractObject : MonoBehaviour, IInteractable
 {
@@ -36,7 +37,7 @@ public class InteractObject : MonoBehaviour, IInteractable
     public AudioClip closeAudio;
     private bool state = false;
     private Vector3 initialScale;
-
+    public bool disabled = false;
     
     private Vector3 startPosition;
     private Quaternion startRotation;
@@ -55,7 +56,6 @@ public class InteractObject : MonoBehaviour, IInteractable
         startPosition = objectToAnimate.transform.localPosition;
         startRotation = objectToAnimate.transform.localRotation;
         startScale = objectToAnimate.transform.localScale;
-        gameObject.layer = LayerMask.NameToLayer("Interact");
         initialScale = objectToAnimate.transform.localScale;
         for (int i = 0; i < 3; i++)
         {
@@ -67,26 +67,27 @@ public class InteractObject : MonoBehaviour, IInteractable
         }
     }
 
-    public string GetUseAction()
+    public bool IsDisabled()
     {
-        return useAction.Split('/')[state ? 1 : 0].Trim();
+        return disabled;
     }
+
 
     public void ShowOutline()
     {
-        // Debug.Log("Showing outline on " + objectToOutline.name);
-        outline.enabled = true;
+        if (outline != null)
+            outline.enabled = true;
     }
 
     public void HideOutline()
     {
-        // Debug.Log("Hiding outline on " + objectToOutline.name);
-        outline.enabled = false;
+        if (outline != null)
+            outline.enabled = false;
     }
 
     public void Interact()
     {
-        if (currentAnimation != null)
+        if (currentAnimation != null || disabled)
             return;
         state = !state;
         currentAnimation = StartCoroutine(Animate(state));
@@ -94,7 +95,7 @@ public class InteractObject : MonoBehaviour, IInteractable
 
     public string GetDescription()
     {
-        return GetUseAction();
+        return useAction.Split('/')[state ? 1 : 0].Trim();
     }
 
     private IEnumerator Animate(bool open)
@@ -138,7 +139,7 @@ public class InteractObject : MonoBehaviour, IInteractable
         }
         if (disableInteractionAfterAnimation)
         {
-            gameObject.layer = LayerMask.NameToLayer("Default");
+            disabled = true;
         }
 
         objectToAnimate.transform.localPosition = targetPosition;
