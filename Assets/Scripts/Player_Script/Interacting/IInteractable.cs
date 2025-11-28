@@ -4,4 +4,5 @@ public interface IInteractable
     void ShowOutline();
     void HideOutline();
     string GetUseAction();
+    string GetDescription();
 }

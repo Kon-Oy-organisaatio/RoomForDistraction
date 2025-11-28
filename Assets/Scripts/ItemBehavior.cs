@@ -44,4 +44,9 @@ public class ItemBehavior : MonoBehaviour, IInteractable
         Destroy(gameObject);
     }
 
+    public string GetDescription()
+    {
+        return "ItemBehavior interact";
+    }
+
 }
