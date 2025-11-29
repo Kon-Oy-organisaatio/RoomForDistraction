@@ -90,6 +90,8 @@ GameObject:
   - component: {fileID: 6878154341650602215}
   - component: {fileID: 4149299774903381150}
   - component: {fileID: 3626975136803659302}
+  - component: {fileID: 1956360803061402384}
+  - component: {fileID: 119899053991757433}
   m_Layer: 0
   m_Name: ScriptUI_Prefab
   m_TagString: Untagged
@@ -135,6 +137,7 @@ MonoBehaviour:
   itemManager: {fileID: 3626975136803659302}
   checklistUI: {fileID: 6278497792623047397}
   clockUI: {fileID: 7878829663160948642}
+  highScoreManager: {fileID: 1956360803061402384}
   pauseManager: {fileID: 6878154341650602215}
   itemPool: {fileID: 4149299774903381150}
   gameDuration: 30
@@ -226,6 +229,31 @@ MonoBehaviour:
   checklistUI: {fileID: 6278497792623047397}
   targetCount: 5
   distractionCount: 5
+--- !u!114 &1956360803061402384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071006476350157805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a216f4bbf80fa1a41a2086d53d4559ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backendAPI: {fileID: 119899053991757433}
+--- !u!114 &119899053991757433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071006476350157805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3322be5f0d83a24384f56f0467d7166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1196096550085422061
 GameObject:
   m_ObjectHideFlags: 0

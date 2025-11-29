@@ -121,6 +121,18 @@ public class ChecklistUI : MonoBehaviour
         return string.Join(", ", collected);
     }
 
+    public bool AllItemsCollected()
+    {
+        foreach (ItemEntry item in items)
+        {
+            if (!item.isChecked)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public void RedrawList()
     {
         if (textElements == null || imageElements == null)

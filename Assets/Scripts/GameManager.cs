@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections;
+using Player_Script;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,23 +11,21 @@ public class GameManager : MonoBehaviour
     public ItemManager itemManager;
     public ChecklistUI checklistUI;
     public ClockUI clockUI;
-    //public SceneLoader sceneLoader;
-    //public HighscoreManager highscoreManager;
+    public HighScoreManager highScoreManager;
     public PauseManager pauseManager;
     public ItemPool itemPool;
 
     private float gameTime = 0f; // temp
     public float gameDuration = 30f; // temp
 
-    // täällä vai PauseManagerissa?
     public Canvas gameOverCanvas;
 
     public void Start()
     {
         playerData.PlayerSpeedMultiplier = 1f;
         playerData.AnimationMultiplier = 1f;
+        if (playerData.PlayerName == "") playerData.PlayerName = "Player";
         pauseManager.isGameOver = false;
-
         StartCoroutine(DelayedInit());
     }
 
@@ -48,6 +48,12 @@ public class GameManager : MonoBehaviour
 
         if (itemManager.IsCorrectItem(itemName)) scoreManager.AddScore(100);
         else scoreManager.AddScore(-100);
+
+        if (checklistUI.AllItemsCollected())
+        {
+            Debug.Log("GameManager: All items collected! Ending game.");
+            OnGameOver();
+        }
     }
 
     public void OnItemUse(string itemName)
@@ -62,12 +68,27 @@ public class GameManager : MonoBehaviour
 
     public void OnGameOver()
     {
-        //pauseManager.EndGame();
-        //gameOverCanvas.enabled = true;
-        clockUI.UpdateClock(gameDuration, gameDuration);
+        pauseManager.EndGame();
+        gameOverCanvas.enabled = true;
         Debug.Log("GameManager: Game Over!");
         string collectedItems = checklistUI.GetCollectedItems();
-        //highscoreManager.AddScore(playerData.name, scoreManager.GetScore(), gameTime, collectedItems);
+        Highscore score = new Highscore
+        (
+            playerData.PlayerName,
+            scoreManager.GetScore(),
+            (int)(gameTime * 1000),
+            collectedItems
+        );
+        highScoreManager.AddScore(score);
+        List<Highscore> highScores = HighScoreManager.LoadScores();
+        highScores.Sort(new HighscoreComparer());
+        Debug.Log("Highscores:");
+        foreach (Highscore hs in highScores)
+        {
+            Debug.Log(" " + hs.ToString());
+        }
+        Highscore highest = highScoreManager.GetHighestScore();
+        Debug.Log("Highest by " + playerData.PlayerName + " " + highest.ToString());
     }
 
     public void Update()
