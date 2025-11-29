@@ -66,7 +66,8 @@ namespace Player_Script
 
         public void OnDrawGizmos() {
             Gizmos.color = Color.green;
-            Gizmos.DrawRay(mainCamera.transform.position, mainCamera.transform.forward * interactionDistance);
+            if (mainCamera != null)
+                Gizmos.DrawRay(mainCamera.transform.position, mainCamera.transform.forward * interactionDistance);
         }
     }
 }
