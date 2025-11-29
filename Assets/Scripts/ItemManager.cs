@@ -95,6 +95,24 @@ public class ItemManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Checks if the given item name is in the target items list.
+    /// </summary>
+    /// <param name="itemName"></param>
+    /// <returns> True if the item is a target item, false otherwise. </returns>
+    public bool IsCorrectItem(string itemName)
+    {
+        foreach (GameObject target in targetItems)
+        {
+            ItemBehavior script = target.GetComponent<ItemBehavior>();
+            if (script != null && script.itemName == itemName)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public List<GameObject> GetTargetItems() => targetItems;
     public List<GameObject> GetDistractionItems() => distractionItems;
 }

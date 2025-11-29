@@ -40,16 +40,14 @@ public class GameManager : MonoBehaviour
     public void OnItemPickup(string itemName)
     {
         Debug.Log("GameManager: Item picked up - " + itemName);
-
         // Delegate to ItemManager
         if (itemManager != null)
         {
             itemManager.OnItemPickup(itemName);
         }
 
-        // Optional scoring logic
-        // if (itemManager.IsCorrectItem(itemName)) scoreManager.AddScore(100);
-        // else scoreManager.AddScore(-100);
+        if (itemManager.IsCorrectItem(itemName)) scoreManager.AddScore(100);
+        else scoreManager.AddScore(-100);
     }
 
     public void OnItemUse(string itemName)

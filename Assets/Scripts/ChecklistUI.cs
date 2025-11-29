@@ -68,22 +68,22 @@ public class ChecklistUI : MonoBehaviour
         }
     }
 
-#if UNITY_EDITOR
-    public void Start()
-    {
-        // Editor-only auto-refresh for debugging
-        StartCoroutine(UpdateChecklist());
-    }
+// #if UNITY_EDITOR
+//     public void Start()
+//     {
+//         // Editor-only auto-refresh for debugging
+//         StartCoroutine(UpdateChecklist());
+//     }
 
-    IEnumerator UpdateChecklist()
-    {
-        while (true)
-        {
-            RedrawList();
-            yield return new WaitForSeconds(1f);
-        }
-    }
-#endif
+//     IEnumerator UpdateChecklist()
+//     {
+//         while (true)
+//         {
+//             RedrawList();
+//             yield return new WaitForSeconds(1f);
+//         }
+//     }
+// #endif
 
     public void AddItem(string itemName)
     {
@@ -99,11 +99,13 @@ public class ChecklistUI : MonoBehaviour
             {
                 item.isChecked = true;
                 item.isCorrect = true;
+                RedrawList();
                 return;
             }
         }
         // If not found, add as incorrect
         items.Add(new ItemEntry(itemName) { isChecked = true, isCorrect = false });
+        RedrawList();
     }
 
     public string GetCollectedItems()
