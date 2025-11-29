@@ -72,7 +72,8 @@ public class ItemManager : MonoBehaviour
     {
         foreach (GameObject target in targetItems)
         {
-            checklistUI.items.Add(new ItemEntry(target.name)
+            ItemBehavior script = target.GetComponent<ItemBehavior>();
+            checklistUI.items.Add(new ItemEntry(script.itemName)
             {
                 isCorrect = true
             });
