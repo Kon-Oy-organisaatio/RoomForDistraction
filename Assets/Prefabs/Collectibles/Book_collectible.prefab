@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &7068465328841340608
+--- !u!1001 &5103600294445863563
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -8,73 +8,73 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 7eae16f95c9efc840968f55a121af1de, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 6459e2afc82841c41a342c0e4e7bcc5e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 504.594
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7eae16f95c9efc840968f55a121af1de, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 6459e2afc82841c41a342c0e4e7bcc5e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.731
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7eae16f95c9efc840968f55a121af1de, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 6459e2afc82841c41a342c0e4e7bcc5e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 523.164
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7eae16f95c9efc840968f55a121af1de, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 6459e2afc82841c41a342c0e4e7bcc5e, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7eae16f95c9efc840968f55a121af1de, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 6459e2afc82841c41a342c0e4e7bcc5e, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7eae16f95c9efc840968f55a121af1de, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 6459e2afc82841c41a342c0e4e7bcc5e, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7eae16f95c9efc840968f55a121af1de, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 6459e2afc82841c41a342c0e4e7bcc5e, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7eae16f95c9efc840968f55a121af1de, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 6459e2afc82841c41a342c0e4e7bcc5e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7eae16f95c9efc840968f55a121af1de, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 6459e2afc82841c41a342c0e4e7bcc5e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7eae16f95c9efc840968f55a121af1de, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 6459e2afc82841c41a342c0e4e7bcc5e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 7eae16f95c9efc840968f55a121af1de, type: 3}
+    - target: {fileID: 919132149155446097, guid: 6459e2afc82841c41a342c0e4e7bcc5e, type: 3}
       propertyPath: m_Name
-      value: keys
+      value: Book_collectible
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7eae16f95c9efc840968f55a121af1de, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6459e2afc82841c41a342c0e4e7bcc5e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1244717283506075831}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7eae16f95c9efc840968f55a121af1de, type: 3}
+      addedObject: {fileID: -3344882531538968447}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6459e2afc82841c41a342c0e4e7bcc5e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3206969695148635521}
-  m_SourcePrefab: {fileID: 100100000, guid: 7eae16f95c9efc840968f55a121af1de, type: 3}
---- !u!1 &7987505667702098833 stripped
+      addedObject: {fileID: 6668047298003710782}
+  m_SourcePrefab: {fileID: 100100000, guid: 6459e2afc82841c41a342c0e4e7bcc5e, type: 3}
+--- !u!1 &5337549219878891482 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7eae16f95c9efc840968f55a121af1de, type: 3}
-  m_PrefabInstance: {fileID: 7068465328841340608}
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6459e2afc82841c41a342c0e4e7bcc5e, type: 3}
+  m_PrefabInstance: {fileID: 5103600294445863563}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1244717283506075831
+--- !u!114 &-3344882531538968447
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7987505667702098833}
+  m_GameObject: {fileID: 5337549219878891482}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 34b4d7d91e73eab4eb6234b1a1c6964e, type: 3}
@@ -83,14 +83,14 @@ MonoBehaviour:
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 5
   useAction: Poimi
-  itemName: Avaimet
---- !u!65 &3206969695148635521
+  itemName: Kirja
+--- !u!65 &6668047298003710782
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7987505667702098833}
+  m_GameObject: {fileID: 5337549219878891482}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -103,5 +103,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.1, y: 0.05, z: 0.1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.15, y: 0.05, z: 0.25}
+  m_Center: {x: 0, y: 0.03, z: 0}
