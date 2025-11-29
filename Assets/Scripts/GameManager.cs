@@ -1,10 +1,10 @@
 using UnityEngine;
 using System.Collections;
-using Player_Script;
 using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance;
     [Tooltip("Player data scriptable object")]
     public PlayerData playerData;
     public ScoreManager scoreManager;
@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
 
     public void Start()
     {
+        Instance = this;
         playerData.PlayerSpeedMultiplier = 1f;
         playerData.AnimationMultiplier = 1f;
         if (playerData.PlayerName == "") playerData.PlayerName = "Player";

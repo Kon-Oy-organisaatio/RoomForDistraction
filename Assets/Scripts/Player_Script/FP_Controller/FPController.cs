@@ -30,7 +30,7 @@ namespace Player_Script
         {
             get
             {
-                return Helper.GetGameManager().playerData.PlayerSpeedMultiplier;
+                return GameManager.Instance.playerData.PlayerSpeedMultiplier;
             }
         }
 

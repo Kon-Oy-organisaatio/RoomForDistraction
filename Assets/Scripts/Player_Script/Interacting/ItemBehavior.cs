@@ -40,8 +40,7 @@ public class ItemBehavior : MonoBehaviour, IInteractable
     public void Interact()
     {
         Debug.Log("Picked up: " + itemName);
-        GameManager gameManager = Helper.GetGameManager();
-        gameManager.OnItemPickup(itemName);
+        GameManager.Instance.OnItemPickup(itemName);
         Destroy(gameObject);
     }
 

@@ -115,7 +115,7 @@ public class InteractObject : MonoBehaviour, IInteractable
         Vector3 initialScale = objectToAnimate.transform.localScale;
 
         float elapsed = 0f;
-        float duration = animationDuration / Helper.GetGameManager().playerData.AnimationMultiplier;
+        float duration = animationDuration / GameManager.Instance.playerData.AnimationMultiplier;
         while (elapsed < duration)
         {
             float t = elapsed / duration;
