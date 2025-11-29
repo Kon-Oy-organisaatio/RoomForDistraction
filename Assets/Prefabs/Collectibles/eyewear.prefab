@@ -102,7 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 5
-  useAction: Poimi
+  useAction: 'Poimi '
   itemName: "Silm\xE4lasit"
 --- !u!65 &2452702440729112603
 BoxCollider:

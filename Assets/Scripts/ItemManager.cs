@@ -73,6 +73,7 @@ public class ItemManager : MonoBehaviour
         foreach (GameObject target in targetItems)
         {
             ItemBehavior script = target.GetComponent<ItemBehavior>();
+            Debug.Log((script != null) ? script.itemName : "No ItemBehavior script found on target item.  " + target.name);
             checklistUI.items.Add(new ItemEntry(script.itemName)
             {
                 isCorrect = true

@@ -94,7 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 5
-  useAction: Poimi
+  useAction: 'Poimi '
   itemName: "K\xE4nnykk\xE4"
 --- !u!65 &302409367615818043
 BoxCollider:

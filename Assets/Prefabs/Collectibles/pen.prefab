@@ -82,7 +82,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 5
-  useAction: Pickup Item
+  useAction: 'Poimi '
   itemName: "Kyn\xE4"
 --- !u!65 &79913897550480402
 BoxCollider:

@@ -82,7 +82,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 5
-  useAction: Poimi
+  useAction: 'Poimi '
   itemName: Avaimet
 --- !u!65 &3206969695148635521
 BoxCollider:

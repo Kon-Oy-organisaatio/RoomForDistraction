@@ -82,8 +82,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 5
-  useAction: Pickup Item
-  itemName: Item
+  useAction: 'Poimi '
+  itemName: Pillerirasia
 --- !u!65 &2648797028837854643
 BoxCollider:
   m_ObjectHideFlags: 0

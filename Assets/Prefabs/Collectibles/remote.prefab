@@ -82,7 +82,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 5
-  useAction: Poimi
+  useAction: 'Poimi '
   itemName: "Kaukos\xE4\xE4din"
 --- !u!65 &7267928275413310519
 BoxCollider:

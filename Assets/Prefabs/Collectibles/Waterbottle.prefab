@@ -118,7 +118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 5
-  useAction: Poimi
+  useAction: 'Poimi '
   itemName: Vesipullo
 --- !u!65 &1394372908550412488
 BoxCollider:

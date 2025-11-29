@@ -98,8 +98,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 5
-  useAction: Pickup Item
-  itemName: Item
+  useAction: 'Poimi '
+  itemName: Muki
 --- !u!65 &2627618467558406932
 BoxCollider:
   m_ObjectHideFlags: 0

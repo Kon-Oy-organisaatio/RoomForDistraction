@@ -8,8 +8,8 @@ public class ItemBehavior : MonoBehaviour, IInteractable
     public float outlineWidth = 5f;
 
     [Header("Item Settings")]
-    public string useAction = "Pickup Item";
-    public string itemName = "Item";
+    public string useAction = "Poimi ";
+    public string itemName = "Tavara";
 
     public void Start()
     {
@@ -47,7 +47,7 @@ public class ItemBehavior : MonoBehaviour, IInteractable
 
     public string GetDescription()
     {
-        return useAction;
+        return useAction + itemName;
     }
 
 }
