@@ -10,7 +10,7 @@ public class PauseManager : MonoBehaviour
     [Tooltip("Canvas to enable when paused")]
     public Canvas pauseMenuCanvas;
 
-    private void LateUpdate ()
+    private void LateUpdate()
     {
         if (isGameOver) return;
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
@@ -42,18 +42,19 @@ public class PauseManager : MonoBehaviour
 
     public void EndGame()
     {
+        isGameOver = true;
+        isPaused = false;
         Time.timeScale = 0f;
         pauseMenuCanvas.enabled = false;
-        isGameOver = true;
     }
 
     private void OnDisable()
     {
-        ResumeGame();
+        if (!isGameOver) ResumeGame();
     }
 
     private void OnDestroy()
     {
-        ResumeGame();
+        if (!isGameOver) ResumeGame();
     }
-}   
+}

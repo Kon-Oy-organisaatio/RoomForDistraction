@@ -9,8 +9,8 @@ public class ItemManager : MonoBehaviour
     [Tooltip("Reference to the Checklist UI")]
     public ChecklistUI checklistUI;
 
-    // [Tooltip("Reference to the SpawnManager")]
-    // public SpawnManager spawnManager;
+    [Tooltip("Reference to the SpawnManager")]
+    public SpawnManager spawnManager;
 
     private List<GameObject> targetItems = new List<GameObject>();
     private List<GameObject> distractionItems = new List<GameObject>();
@@ -56,10 +56,10 @@ public class ItemManager : MonoBehaviour
         }
 
         // Send both sets to SpawnManager for placement
-        // if (spawnManager != null)
-        // {
-        //     spawnManager.SpawnItems(targetItems, distractionItems);
-        // }
+        if (spawnManager != null)
+        {
+             spawnManager.SpawnItems(targetItems, distractionItems);
+        }
 
         Debug.Log("ItemManager: Initialized with " + targetItems.Count + " targets and " + distractionItems.Count + " distractions.");
     }

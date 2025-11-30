@@ -12595,11 +12595,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScriptUI_Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 5027348201094039747, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
+      propertyPath: spawnManager
+      value: 
+      objectReference: {fileID: 1059937813}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1071006476350157805, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1059937813}
   m_SourcePrefab: {fileID: 100100000, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
+--- !u!1 &1059937812 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1071006476350157805, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
+  m_PrefabInstance: {fileID: 1059937811}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1059937813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059937812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6abb0410e7c1c674890de8e4818afa6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1068367968
 PrefabInstance:
   m_ObjectHideFlags: 0
