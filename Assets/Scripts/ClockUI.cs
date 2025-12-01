@@ -44,14 +44,4 @@ public class ClockUI: MonoBehaviour
             LeftFill.transform.rotation = Quaternion.Euler(0f, 0f, degrees - 180f);
         }
     }
-
-    // private void OnDisable()
-    // {
-    //     Reset();
-    // }
-
-    // private void OnDestroy()
-    // {
-    //     Reset();
-    // }
 }

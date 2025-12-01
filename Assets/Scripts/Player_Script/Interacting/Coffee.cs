@@ -39,8 +39,7 @@ public class Coffee : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        GameManager gameManager = Helper.GetGameManager();
-        gameManager.OnItemUse(itemName);
+        GameManager.Instance.OnItemUse(itemName);
         Destroy(gameObject);
     }
 

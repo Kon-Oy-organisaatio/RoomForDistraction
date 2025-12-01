@@ -8,8 +8,8 @@ public class ItemBehavior : MonoBehaviour, IInteractable
     public float outlineWidth = 5f;
 
     [Header("Item Settings")]
-    public string useAction = "Pickup Item";
-    public string itemName = "Item";
+    public string useAction = "Poimi ";
+    public string itemName = "Tavara";
 
     public void Start()
     {
@@ -40,14 +40,13 @@ public class ItemBehavior : MonoBehaviour, IInteractable
     public void Interact()
     {
         Debug.Log("Picked up: " + itemName);
-        GameManager gameManager = Helper.GetGameManager();
-        gameManager.OnItemPickup(itemName);
+        GameManager.Instance.OnItemPickup(itemName);
         Destroy(gameObject);
     }
 
     public string GetDescription()
     {
-        return useAction;
+        return useAction + itemName;
     }
 
 }

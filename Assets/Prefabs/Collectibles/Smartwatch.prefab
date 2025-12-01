@@ -83,5 +83,53 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d1bb7cfe525e6234e94f718bd01a37b5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -825634671060644397}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d1bb7cfe525e6234e94f718bd01a37b5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4951374833741484677}
   m_SourcePrefab: {fileID: 100100000, guid: d1bb7cfe525e6234e94f718bd01a37b5, type: 3}
+--- !u!1 &8006374117646807095 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d1bb7cfe525e6234e94f718bd01a37b5, type: 3}
+  m_PrefabInstance: {fileID: 7195963883712220518}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-825634671060644397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8006374117646807095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34b4d7d91e73eab4eb6234b1a1c6964e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 5
+  useAction: 'Poimi '
+  itemName: "\xC4lykello"
+--- !u!65 &4951374833741484677
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8006374117646807095}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.15, y: 0.04, z: 0.15}
+  m_Center: {x: 0, y: 0.03, z: 0}

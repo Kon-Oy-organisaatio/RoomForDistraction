@@ -66,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6641160750435737063, guid: c51a66a4ac2ee584887ffd0310779c44, type: 3}
       propertyPath: m_Name
-      value: Laptop (1) Variant
+      value: Laptop_Shut
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

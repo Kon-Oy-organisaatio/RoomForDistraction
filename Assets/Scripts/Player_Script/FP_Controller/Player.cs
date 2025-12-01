@@ -73,6 +73,20 @@ namespace Player_Script
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
         }
+
+        private void Update()
+        {
+            if (Time.timeScale == 0f)
+            {
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+            }
+            else
+            {
+                Cursor.visible = false;
+                Cursor.lockState = CursorLockMode.Locked;
+            }
+        }
         #endregion
     }
 }

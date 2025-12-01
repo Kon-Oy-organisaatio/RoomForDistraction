@@ -106,6 +106,7 @@ public class InteractObject : MonoBehaviour, IInteractable
         {
             AudioSource.PlayClipAtPoint(closeAudio, objectToAnimate.transform.position);
         }
+
         Vector3 targetPosition = open ? startPosition + relativePosition : startPosition;
         Quaternion targetRotation = open ? Quaternion.Euler(relativeRotation) * startRotation : startRotation;
         Vector3 scale =  open ? targetScale : startScale;
@@ -115,7 +116,7 @@ public class InteractObject : MonoBehaviour, IInteractable
         Vector3 initialScale = objectToAnimate.transform.localScale;
 
         float elapsed = 0f;
-        float duration = animationDuration / Helper.GetGameManager().playerData.AnimationMultiplier;
+        float duration = animationDuration / GameManager.Instance.playerData.AnimationMultiplier;
         while (elapsed < duration)
         {
             float t = elapsed / duration;

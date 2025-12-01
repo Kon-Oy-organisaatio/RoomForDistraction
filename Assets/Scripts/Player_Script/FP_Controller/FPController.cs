@@ -30,7 +30,7 @@ namespace Player_Script
         {
             get
             {
-                return Helper.GetGameManager().playerData.PlayerSpeedMultiplier;
+                return GameManager.Instance.playerData.PlayerSpeedMultiplier;
             }
         }
 
@@ -119,6 +119,7 @@ namespace Player_Script
 
         private void Update()
         {
+            if (Time.timeScale == 0f) return;
             UpdateCameraOffset();
 
             MoveUpdate();

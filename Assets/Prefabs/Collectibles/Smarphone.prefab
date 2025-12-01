@@ -62,10 +62,58 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 6b45043d2b221e54d886ed01e0340f8e, type: 2}
     - target: {fileID: 919132149155446097, guid: 762d17a3695489a488b3380f3205918b, type: 3}
       propertyPath: m_Name
-      value: Smarphone (4)
+      value: Smarphone
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 762d17a3695489a488b3380f3205918b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -7885109336480664540}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 762d17a3695489a488b3380f3205918b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 302409367615818043}
   m_SourcePrefab: {fileID: 100100000, guid: 762d17a3695489a488b3380f3205918b, type: 3}
+--- !u!1 &806751379005689006 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 762d17a3695489a488b3380f3205918b, type: 3}
+  m_PrefabInstance: {fileID: 572873918608437759}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-7885109336480664540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806751379005689006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34b4d7d91e73eab4eb6234b1a1c6964e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 5
+  useAction: 'Poimi '
+  itemName: "K\xE4nnykk\xE4"
+--- !u!65 &302409367615818043
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806751379005689006}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.003, y: 0.0015, z: 0.0002}
+  m_Center: {x: 0, y: 0, z: 0}
