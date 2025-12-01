@@ -106,6 +106,7 @@ public class InteractObject : MonoBehaviour, IInteractable
         {
             AudioSource.PlayClipAtPoint(closeAudio, objectToAnimate.transform.position);
         }
+
         Vector3 targetPosition = open ? startPosition + relativePosition : startPosition;
         Quaternion targetRotation = open ? Quaternion.Euler(relativeRotation) * startRotation : startRotation;
         Vector3 scale =  open ? targetScale : startScale;

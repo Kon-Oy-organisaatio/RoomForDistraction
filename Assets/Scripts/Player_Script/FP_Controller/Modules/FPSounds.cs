@@ -69,10 +69,6 @@ namespace Player_Script
                 AudioClip clip = clips[index];
 
                 audioSource.PlayOneShot(clip, volumeScale);
-
-
-
-
             }
             catch { }
         }

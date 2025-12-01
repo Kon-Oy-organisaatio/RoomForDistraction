@@ -41,7 +41,6 @@ namespace Player_Script
         public float footstepWalkRate = 0.8f;
         public float footstepSprintRate = 0.3f;
 
-
         [Space(15)]
         public float footstepCrouchVolume = 0.07f;
         public float footstepWalkVolume = 0.1f;
@@ -50,5 +49,8 @@ namespace Player_Script
         [Space(15)]
         public float maxLandSoundVolume = 0.7f;
         public float jumpSoundVolume = 0.5f;
+
+        [Header("Interaction")]
+        public float interactionDistance = 5f;
     }
 }

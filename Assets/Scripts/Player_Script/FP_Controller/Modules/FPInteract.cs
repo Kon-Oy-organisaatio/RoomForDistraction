@@ -7,9 +7,6 @@ namespace Player_Script
     {
         public Camera mainCamera;
 
-        // This could be added to the FPController preset
-        public float interactionDistance = 2f;
-
         public GameObject interactionUI;
         public TextMeshProUGUI interactionText;
 
@@ -50,7 +47,7 @@ namespace Player_Script
             bool hitSomething = false;
 
 
-            if(Physics.Raycast(ray, out hit, interactionDistance))
+            if(Physics.Raycast(ray, out hit, preset.interactionDistance))
             {
                 IInteractable interactable = hit.collider.GetComponent<IInteractable>();
 
@@ -68,7 +65,7 @@ namespace Player_Script
         public void OnDrawGizmos() {
             Gizmos.color = Color.green;
             if (mainCamera != null)
-                Gizmos.DrawRay(mainCamera.transform.position, mainCamera.transform.forward * interactionDistance);
+                Gizmos.DrawRay(mainCamera.transform.position, mainCamera.transform.forward * preset.interactionDistance);
         }
     }
 }
