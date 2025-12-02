@@ -50,16 +50,22 @@ public class SpawnManager : MonoBehaviour
     }
     private void SpawnAt(SpawnPoint spawnPoint, GameObject prefab)
     {
-    if (spawnPoint == null || prefab == null) return;
+        if (spawnPoint == null || prefab == null) return;
 
-    // Calculate spawn position slightly above the spawn point to avoid clipping
-    Vector3 spawnPos = spawnPoint.transform.position + Vector3.up * 0.02f;
+        // Calculate spawn position slightly above the spawn point to avoid clipping
+        Vector3 spawnPos = spawnPoint.transform.position + Vector3.up * 0.01f;
 
-    // Instantiate with prefab's default rotation
-    GameObject instance = Instantiate(prefab, spawnPos, prefab.transform.rotation);
+        // Instantiate with prefab's default rotation
+        GameObject instance = Instantiate(prefab, spawnPos, prefab.transform.rotation);
 
-    // Set the instantiated object's parent to the spawn point for better organization in the hierarchy
-    instance.transform.SetParent(spawnPoint.transform);
+        // Rotation for water bottle
+        if (instance.CompareTag("Juomapullo"))
+        {
+            instance.transform.Rotate(0f, 90f, 0f);
+        }
+
+        // Set the instantiated object's parent to the spawn point for better organization in the hierarchy
+        instance.transform.SetParent(spawnPoint.transform);
     }
 
 
