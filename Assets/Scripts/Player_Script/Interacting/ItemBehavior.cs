@@ -3,7 +3,7 @@ using UnityEngine;
 public class ItemBehavior : MonoBehaviour, IInteractable
 {
     [Header("Outline Settings")]
-    private Outline outline;
+    public Outline outline;
     public Color outlineColor = Color.white;
     public float outlineWidth = 5f;
 

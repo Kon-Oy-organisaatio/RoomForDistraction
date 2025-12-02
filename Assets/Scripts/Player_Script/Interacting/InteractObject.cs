@@ -33,7 +33,7 @@ public class InteractObject : MonoBehaviour, IInteractable
     public AudioClip openAudio;
     [Tooltip("Audio to play on close")]
     public AudioClip closeAudio;
-    private bool state = false;
+    public bool state = false;
     private Vector3 initialScale;
     public bool disabled = false;
     
