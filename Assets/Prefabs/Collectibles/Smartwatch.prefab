@@ -48,6 +48,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4261873930967259520, guid: d1bb7cfe525e6234e94f718bd01a37b5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0004
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d1bb7cfe525e6234e94f718bd01a37b5, type: 3}
       propertyPath: m_Name
       value: Smartwatch
@@ -55,7 +59,7 @@ PrefabInstance:
     - target: {fileID: 5913876964564614686, guid: d1bb7cfe525e6234e94f718bd01a37b5, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 5cad51c54d14a1044b7db86c92203188, type: 2}
+      objectReference: {fileID: 2100000, guid: 6b431d70617b15044ac49d86526bc668, type: 2}
     - target: {fileID: 5913876964564614686, guid: d1bb7cfe525e6234e94f718bd01a37b5, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
@@ -63,11 +67,11 @@ PrefabInstance:
     - target: {fileID: 5913876964564614686, guid: d1bb7cfe525e6234e94f718bd01a37b5, type: 3}
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
-      objectReference: {fileID: 2100000, guid: 092587ec14bdad04f85e1822cd44add3, type: 2}
+      objectReference: {fileID: 2100000, guid: 8185f3b21be39ac41b4e0d4925141ba6, type: 2}
     - target: {fileID: 5913876964564614686, guid: d1bb7cfe525e6234e94f718bd01a37b5, type: 3}
       propertyPath: 'm_Materials.Array.data[3]'
       value: 
-      objectReference: {fileID: 2100000, guid: 8d8942b44596aac47b77bcec10c3ec40, type: 2}
+      objectReference: {fileID: 2100000, guid: 17c35c99d13624448b06de843100c1c4, type: 2}
     - target: {fileID: 5913876964564614686, guid: d1bb7cfe525e6234e94f718bd01a37b5, type: 3}
       propertyPath: 'm_Materials.Array.data[4]'
       value: 
@@ -75,11 +79,11 @@ PrefabInstance:
     - target: {fileID: 5913876964564614686, guid: d1bb7cfe525e6234e94f718bd01a37b5, type: 3}
       propertyPath: 'm_Materials.Array.data[5]'
       value: 
-      objectReference: {fileID: 2100000, guid: 2560e72b6a9e4314a840a1e95745ed63, type: 2}
+      objectReference: {fileID: 2100000, guid: a259a5dca9b977a4fa96c11172c76f3e, type: 2}
     - target: {fileID: 5971125191798694937, guid: d1bb7cfe525e6234e94f718bd01a37b5, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 39e0ff2539a04ae438ee16465def9d30, type: 2}
+      objectReference: {fileID: 2100000, guid: 2af2bd4049bc8c94faa95e11477cdceb, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -108,6 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34b4d7d91e73eab4eb6234b1a1c6964e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  outline: {fileID: 0}
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 5
   useAction: 'Poimi '
