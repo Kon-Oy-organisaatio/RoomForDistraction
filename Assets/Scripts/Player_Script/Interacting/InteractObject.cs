@@ -33,7 +33,11 @@ public class InteractObject : MonoBehaviour, IInteractable
     public AudioClip openAudio;
     [Tooltip("Audio to play on close")]
     public AudioClip closeAudio;
+    [Tooltip("Current state of the object false = closed, true = open")]
     public bool state = false;
+    [Tooltip("Objects to close when this object is opened")]
+    public GameObject[] closeTargets;
+
     private Vector3 initialScale;
     public bool disabled = false;
     
@@ -114,6 +118,18 @@ public class InteractObject : MonoBehaviour, IInteractable
         Vector3 initialPosition = objectToAnimate.transform.localPosition;
         Quaternion initialRotation = objectToAnimate.transform.localRotation;
         Vector3 initialScale = objectToAnimate.transform.localScale;
+
+        if (open)
+        {
+            foreach (GameObject target in closeTargets)
+            {
+                InteractObject interactable = target.GetComponent<InteractObject>();
+                if (interactable != null && !interactable.IsDisabled() && interactable.state)
+                {
+                    interactable.Interact();
+                }
+            }
+        }
 
         float elapsed = 0f;
         float duration = animationDuration / GameManager.Instance.playerData.AnimationMultiplier;
