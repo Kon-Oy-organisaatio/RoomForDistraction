@@ -314,7 +314,7 @@ GameObject:
   - component: {fileID: 2678379527956780544}
   - component: {fileID: 9161917698149393351}
   m_Layer: 0
-  m_Name: SpawnPoint (1)
+  m_Name: SpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -582,6 +582,7 @@ GameObject:
   - component: {fileID: 7639567014493212358}
   - component: {fileID: 7680755993842890309}
   - component: {fileID: 3876225042575789684}
+  - component: {fileID: 3066708156623427938}
   m_Layer: 3
   m_Name: Alin_Laatikko
   m_TagString: Untagged
@@ -708,6 +709,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.07817452, y: 1.9999995, z: 1.9999996}
   m_Center: {x: -1.3196026, y: 1.4664752e-13, z: 0.0000009641927}
+--- !u!65 &3066708156623427938
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2953182580555933015}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.5725987, y: 2, z: 0}
+  m_Center: {x: -0.047554262, y: 0.00000022407951, z: -0.99999887}
 --- !u!1 &2970500523733637283
 GameObject:
   m_ObjectHideFlags: 0
@@ -852,6 +874,7 @@ GameObject:
   - component: {fileID: 1964285690337693245}
   - component: {fileID: 5386924856516801438}
   - component: {fileID: 5021754066075335643}
+  - component: {fileID: 7101479233383926913}
   m_Layer: 3
   m_Name: Toisiksi_alin
   m_TagString: Untagged
@@ -978,6 +1001,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.073096275, y: 1.9999995, z: 1.9999996}
   m_Center: {x: -1.3253881, y: 1.829158e-13, z: 7.835702e-20}
+--- !u!65 &7101479233383926913
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3688897468730217241}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.5725987, y: 2, z: 0}
+  m_Center: {x: -0.047554262, y: 0.00000022407953, z: -0.9999997}
 --- !u!1 &3995123451961071712
 GameObject:
   m_ObjectHideFlags: 0
@@ -989,6 +1033,7 @@ GameObject:
   - component: {fileID: 3396104967893821374}
   - component: {fileID: 3185768617002199443}
   - component: {fileID: 404880182851520187}
+  - component: {fileID: 3391759380201854144}
   m_Layer: 0
   m_Name: Lipasto
   m_TagString: Untagged
@@ -1065,6 +1110,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3391759380201854144
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3995123451961071712}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.1330314, y: 2.2065573, z: 0.03791181}
+  m_Center: {x: -0.06651668, y: 0.000000056178273, z: 1.2097363}
 --- !u!1 &4311191595411051313
 GameObject:
   m_ObjectHideFlags: 0
@@ -1164,6 +1230,7 @@ GameObject:
   - component: {fileID: 3007557602852540563}
   - component: {fileID: 2472108564297178480}
   - component: {fileID: 8540051956367996137}
+  - component: {fileID: 1490367372715053007}
   m_Layer: 3
   m_Name: Keski_laatikko
   m_TagString: Untagged
@@ -1290,6 +1357,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.110446975, y: 1.9999995, z: 1.9999996}
   m_Center: {x: -1.3019345, y: 0.00000045695774, z: -0.0000009641932}
+--- !u!65 &1490367372715053007
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4709279669663136062}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.5725987, y: 2, z: 0}
+  m_Center: {x: -0.047554262, y: 0.0000004525583, z: -1.0000008}
 --- !u!1 &4714779479292703067
 GameObject:
   m_ObjectHideFlags: 0
@@ -1565,6 +1653,7 @@ GameObject:
   - component: {fileID: 8542734940924894711}
   - component: {fileID: 2549859007757310256}
   - component: {fileID: 3659063743189851446}
+  - component: {fileID: 946417736198998368}
   m_Layer: 3
   m_Name: Ylin_Oikea
   m_TagString: Untagged
@@ -1690,6 +1779,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.066947736, y: 0.9756853, z: 1.3951831}
   m_Center: {x: -1.2877901, y: 0.00013605924, z: -0.03264222}
+--- !u!65 &946417736198998368
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6266583483448005134}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.5725987, y: 0.97568554, z: 0}
+  m_Center: {x: -0.0000037813425, y: 0.00013605453, z: -0.7302336}
 --- !u!1 &6319837621539411334
 GameObject:
   m_ObjectHideFlags: 0
@@ -1961,6 +2071,7 @@ GameObject:
   - component: {fileID: 8613960232799892855}
   - component: {fileID: 566843143684340685}
   - component: {fileID: 5952663266486449573}
+  - component: {fileID: 2910982895861443308}
   m_Layer: 3
   m_Name: Ylin_Vasen
   m_TagString: Untagged
@@ -2086,6 +2197,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.05529632, y: 0.9756853, z: 1.3951831}
   m_Center: {x: -1.2819624, y: 0.00013628772, z: -0.03264222}
+--- !u!65 &2910982895861443308
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6569894402708692769}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.5725987, y: 0.97568554, z: 0}
+  m_Center: {x: -0.0000037813425, y: 0.0001365686, z: -0.73023367}
 --- !u!1 &7539090738126907558
 GameObject:
   m_ObjectHideFlags: 0
@@ -2183,7 +2315,7 @@ GameObject:
   - component: {fileID: 5909457164929216733}
   - component: {fileID: 7445679298518147379}
   m_Layer: 0
-  m_Name: SpawnPoint (1)
+  m_Name: SpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2316,6 +2448,7 @@ GameObject:
   - component: {fileID: 8085509831383233057}
   - component: {fileID: 118778085717567635}
   - component: {fileID: 8285457899308066885}
+  - component: {fileID: 8836769221717748385}
   m_Layer: 3
   m_Name: Toisikis_ylin
   m_TagString: Untagged
@@ -2442,6 +2575,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.066950224, y: 1.9999995, z: 2.5522442}
   m_Center: {x: -1.3003775, y: 0.00000022753258, z: 0.27612132}
+--- !u!65 &8836769221717748385
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8272496170928701993}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.5725987, y: 2, z: 0}
+  m_Center: {x: -0.047554262, y: 0.0000004525583, z: -1.0000008}
 --- !u!1 &8534132048435542688
 GameObject:
   m_ObjectHideFlags: 0
@@ -2539,7 +2693,7 @@ GameObject:
   - component: {fileID: 1563096897768603020}
   - component: {fileID: 4447544750991658614}
   m_Layer: 0
-  m_Name: SpawnPoint (1)
+  m_Name: SpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
