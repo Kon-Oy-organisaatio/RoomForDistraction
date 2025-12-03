@@ -100,7 +100,7 @@ MonoBehaviour:
   relativeRotation: {x: 0, y: 180, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   animationDuration: 0
-  useAction: "K\xE4\xE4nn\xE4 oikeinperin/K\xE4\xE4nn\xE4 oikeinperin"
+  useAction: "K\xE4\xE4nn\xE4 oikeinp\xE4in/K\xE4\xE4nn\xE4 oikeinp\xE4in"
   activationTarget: {fileID: 0}
   disableInteractionAfterAnimation: 0
   openAudio: {fileID: 0}
