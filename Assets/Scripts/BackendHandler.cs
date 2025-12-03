@@ -12,7 +12,7 @@ public class BackendHandler : MonoBehaviour
     bool updateHighScoreTextArea = false;
     private int fetchCounter = 0;
     string log = "";
-    const string urlBackendHighScoresFile = "https://niisku.lab.fi/~konoy/RoomForDistraction/highscores.json";
+    // const string urlBackendHighScoresFile = "https://niisku.lab.fi/~konoy/RoomForDistraction/highscores.json";
     const string urlBackendHighScores = "https://niisku.lab.fi/~konoy/RoomForDistraction/api/highscores.php";
     const string jsonTestStr =
         "{ " +
@@ -94,13 +94,6 @@ public class BackendHandler : MonoBehaviour
     }
 
     // button methods
-    public void FetchHighScoresJSONFile()
-    {
-        fetchCounter++;
-        Debug.Log("FetchHighScoresJSONFile button clicked");
-        StartCoroutine(GetRequestForHighScoresFile(urlBackendHighScoresFile));
-    }
-
     public void FetchHighScoresJSON()
     {
         fetchCounter++;
@@ -142,7 +135,7 @@ public class BackendHandler : MonoBehaviour
 
     // :
     public TMPro.TMP_InputField playerNameInput;
-    public TMPro.TMP_InputField scoreInput;
+    // public TMPro.TMP_InputField scoreInput;
     public UnityEngine.UI.Button postGameResult;
     bool scoreInputsOk = false;
 
@@ -151,10 +144,10 @@ public class BackendHandler : MonoBehaviour
         // checkScore();
         //if (!scoreInputsOk) return;
         //ORIGINAL HighScore hsItem = new HighScore();
-        Highscore hsItem = new Highscore();
+        HighScore hsItem = new HighScore();
         hsItem.playerName = playerNameInput.text;
-        hsItem.score = int.Parse(scoreInput.text);
-        Debug.Log("PostGameResults button clicked: " + playerNameInput.text + " with scores " + scoreInput.text);
+        //hsItem.score = int.Parse(scoreInput.text);
+        Debug.Log("PostGameResults button clicked: " + playerNameInput.text + " with scores "  /* + scoreInput.text*/);
         Debug.Log("hsItem: " + JsonUtility.ToJson(hsItem));
         StartCoroutine(PostRequestForHighScores(urlBackendHighScores, hsItem));
     }
@@ -187,7 +180,7 @@ public class BackendHandler : MonoBehaviour
     }
     public void checkScore()
     {
-        if (float.TryParse(scoreInput.text, out _) && (playerNameInput.text.Trim().Length > 0))
+        if (playerNameInput.text.Trim().Length > 0) /* + float.TryParse(scoreInput.text, out _) && */
         {
             //postGameResult.enabled = true;
             scoreInputsOk = true;
