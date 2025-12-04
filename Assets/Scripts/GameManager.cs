@@ -97,22 +97,28 @@ public class GameManager : MonoBehaviour
         Debug.Log("GameManager: Game Over!");
 
         string collectedItems = checklistUI.GetCollectedItems();
-        Highscore score = new Highscore(
+
+        HighScore score = new HighScore
+        (
             playerData.PlayerName,
             scoreManager.GetScore(),
             (int)(gameTime * 1000),
             collectedItems
         );
 
-        //highScoreManager.AddScore(score);
+        highScoreManager.AddScore(score);
 
-        //List<Highscore> highScores = HighScoreManager.LoadScores();
-        //highScores.Sort(new HighscoreComparer());
+        // Sync local cache with backend authoritative data
+        highScoreManager.SyncWithBackend();
 
         Debug.Log($"Final Score: {score}");
 
-        //Highscore highest = highScoreManager.GetHighestScore();
-        //Debug.Log($"Highest by {playerData.PlayerName} {highest}");
+        HighScore highest = highScoreManager.GetHighestScore();
+
+        if (highest != null)
+        {
+            Debug.Log($"Highest score so far: {highest.playerName} with {highest.score}");
+        }
     }
 
 

@@ -2,86 +2,87 @@ using UnityEngine;
 using System.IO;
 using System.Collections.Generic;
 
-public class HighscoreComparer : IComparer<Highscore>
+public class HighScoreComparer : IComparer<HighScore>
 {
-    public int Compare(Highscore x, Highscore y)
+    public int Compare(HighScore x, HighScore y)
     {
-        int nameCompare = string.Compare(x.playerName, y.playerName);
-        if (nameCompare != 0)
-            return nameCompare;
-        if (x.score != y.score)
-            return y.score.CompareTo(x.score);
-        return x.mstime.CompareTo(y.mstime);
+        // Sort by score descending, then by mstime ascending, then by name
+        int scoreCompare = y.score.CompareTo(x.score);
+        if (scoreCompare != 0) return scoreCompare;
+
+        int timeCompare = x.mstime.CompareTo(y.mstime);
+        if (timeCompare != 0) return timeCompare;
+
+        return string.Compare(x.playerName, y.playerName);
     }
 }
 
 public class HighScoreManager : MonoBehaviour
 {
-    public BackendAPI backendAPI;
-    public List<Highscore> highScores;
+    public BackendHandler backendHandler;
+    public List<HighScore> highScores;
 
-    public List<Highscore>GetTopScores()
-    {
-        return backendAPI.GetTopscores();
-    }
-
-    public void Awake()
+    void Awake()
     {
         highScores = LoadScores();
     }
 
-    public void AddScore(Highscore score)
+    // Called when a new score is achieved
+    public void AddScore(HighScore score)
     {
         highScores.Add(score);
         SaveScores(highScores);
-        SendScoreToBackend(score);
+        backendHandler.PostGameResults();
     }
 
-    public static List<Highscore> LoadScores(string filename = "highscores.json")
+    // Merge backend scores into local cache
+    public void SyncWithBackend()
+    {
+        var scores = backendHandler.GetHighScores();
+        if (scores != null && scores.scores.Length > 0)
+        {
+            highScores = new List<HighScore>(scores.scores);
+            SaveScores(highScores);
+        }
+    }
+
+    public List<HighScore> GetTopScores(int count = 5)
+    {
+        highScores.Sort(new HighScoreComparer());
+        return highScores.GetRange(0, Mathf.Min(count, highScores.Count));
+    }
+
+    public HighScore GetHighestScore()
+    {
+        if (highScores.Count == 0) return null;
+        highScores.Sort(new HighScoreComparer());
+        return highScores[0];
+    }
+
+    public static List<HighScore> LoadScores(string filename = "highscores.json")
     {
         string path = Path.Combine(Application.persistentDataPath, filename);
         Debug.Log("Loading highscores from: " + path);
-        if (!File.Exists(path)) return new List<Highscore>();
+
+        if (!File.Exists(path)) return new List<HighScore>();
+
         string json = File.ReadAllText(path);
-        var wrapper = JsonUtility.FromJson<HighscoreListWrapper>(json);
-        return wrapper?.scores ?? new List<Highscore>();
+        var wrapper = JsonUtility.FromJson<HighScoreListWrapper>(json);
+        return wrapper?.scores ?? new List<HighScore>();
     }
 
-    public static void SaveScores(List<Highscore> highScores, string filename = "highscores.json")
+    public static void SaveScores(List<HighScore> highScores, string filename = "highscores.json")
     {
         string path = Path.Combine(Application.persistentDataPath, filename);
         Debug.Log("Saving highscores to: " + path);
-        Debug.Log("Highscores to save: " + highScores.Count);
-        string json = JsonUtility.ToJson(new HighscoreListWrapper { scores = highScores });
-        Debug.Log("JSON: " + json);
+
+        string json = JsonUtility.ToJson(new HighScoreListWrapper { scores = highScores });
         File.WriteAllText(path, json);
     }
 
-    public Highscore GetHighestScore()
-    {
-        int highest = -1;
-        int index = -1;
-        for (int i = 0; i < highScores.Count; i++)
-        {
-            Highscore score = highScores[i];
-            if (score.score > highest && score.playerName == highScores[i].playerName)
-            {
-                highest = score.score;
-                index = i;
-            }
-        }
-        return highScores[index];
-    }
-
-    public void SendScoreToBackend(Highscore score)
-    {
-        if (score.score > GetHighestScore().score)
-            backendAPI.SendHighScore(score);
-    }
-
     [System.Serializable]
-    public class HighscoreListWrapper
+    public class HighScoreListWrapper
     {
-        public List<Highscore> scores;
+        public List<HighScore> scores;
     }
 }

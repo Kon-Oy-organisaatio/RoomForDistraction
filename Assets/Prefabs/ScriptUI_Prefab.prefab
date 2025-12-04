@@ -90,8 +90,9 @@ GameObject:
   - component: {fileID: 6878154341650602215}
   - component: {fileID: 4149299774903381150}
   - component: {fileID: 3626975136803659302}
-  - component: {fileID: 1956360803061402384}
-  - component: {fileID: 119899053991757433}
+  - component: {fileID: 3817054329060663232}
+  - component: {fileID: 7275523192051235106}
+  - component: {fileID: 4206143020099245099}
   m_Layer: 0
   m_Name: ScriptUI_Prefab
   m_TagString: Untagged
@@ -137,9 +138,10 @@ MonoBehaviour:
   itemManager: {fileID: 3626975136803659302}
   checklistUI: {fileID: 6278497792623047397}
   clockUI: {fileID: 7878829663160948642}
-  highScoreManager: {fileID: 1956360803061402384}
+  highScoreManager: {fileID: 7275523192051235106}
   pauseManager: {fileID: 6878154341650602215}
   itemPool: {fileID: 4149299774903381150}
+  spawnManager: {fileID: 3817054329060663232}
   gameDuration: 30
   gameOverCanvas: {fileID: 6088851027161273797}
 --- !u!114 &7957683551957665202
@@ -227,9 +229,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemPool: {fileID: 4149299774903381150}
   checklistUI: {fileID: 6278497792623047397}
+  spawnManager: {fileID: 3817054329060663232}
   targetCount: 5
   distractionCount: 5
---- !u!114 &1956360803061402384
+--- !u!114 &3817054329060663232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071006476350157805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6abb0410e7c1c674890de8e4818afa6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7275523192051235106
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -241,8 +256,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a216f4bbf80fa1a41a2086d53d4559ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backendAPI: {fileID: 119899053991757433}
---- !u!114 &119899053991757433
+  backendHandler: {fileID: 4206143020099245099}
+  highScores: []
+--- !u!114 &4206143020099245099
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -251,9 +267,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1071006476350157805}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3322be5f0d83a24384f56f0467d7166, type: 3}
+  m_Script: {fileID: 11500000, guid: ad8a762eab764104a87cf16d09f63978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  highScoresTextArea: {fileID: 0}
+  logTextArea: {fileID: 0}
+  playerNameInput: {fileID: 0}
+  postGameResult: {fileID: 0}
 --- !u!1 &1196096550085422061
 GameObject:
   m_ObjectHideFlags: 0
