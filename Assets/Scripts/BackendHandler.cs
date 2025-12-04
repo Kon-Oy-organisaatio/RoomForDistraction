@@ -20,17 +20,18 @@ public class BackendHandler : MonoBehaviour
         + "{\"id\":1, \"playerName\":\"Matti\",  \"score\":200, \"mstime\": 25000, \"collectedItems\":\"ItemA, ItemB\"} "
         + "] " +
         "}";
-    // vars
-    HighScores hs;
+
+    private HighScoreList hs;
+
     // Start is called before the first frame update
     void Start()
     {
         Debug.Log("BackendHandler started");
         // conversion from JSON string to object
-        hs = JsonUtility.FromJson<HighScores>(jsonTestStr);
-        Debug.Log("HighScores name: " + hs.scores[0].playerName);
+        hs = JsonUtility.FromJson<HighScoreList>(jsonTestStr);
+        Debug.Log("HighScoreList name: " + hs.scores[0].playerName);
         // conversion from object to JSON string
-        Debug.Log("HighScores as json: " + JsonUtility.ToJson(hs));
+        Debug.Log("HighScoreList as json: " + JsonUtility.ToJson(hs));
 
         InsertToLog("BackendHandler started");
 
@@ -43,7 +44,8 @@ public class BackendHandler : MonoBehaviour
         logTextArea.text = log;
         if (updateHighScoreTextArea)
         {
-            highScoresTextArea.text = CreateHighScoreList(); updateHighScoreTextArea = false;
+            highScoresTextArea.text = CreateHighScoreList();
+            updateHighScoreTextArea = false;
         }
     }
     string CreateHighScoreList()
@@ -55,7 +57,9 @@ public class BackendHandler : MonoBehaviour
             {
                 /* hsList += hs.scores[i].playername + ": \t" + hs.scores[i].score + " \t" + hs.scores[i].playtime+"\n"; */
                 hsList += string.Format("[ {0} ] | {1,-15} | {2,5} | {3,-15}\n", (i + 1),
-                    hs.scores[i].playerName, hs.scores[i].score, hs.scores[i].mstime);
+                    hs.scores[i].playerName,
+                    hs.scores[i].score,
+                    hs.scores[i].mstime);
             }
         }
         return hsList;
@@ -83,7 +87,7 @@ public class BackendHandler : MonoBehaviour
             else
             {
                 // create HighScore item from json string
-                hs = JsonUtility.FromJson<HighScores>(resultStr);
+                hs = JsonUtility.FromJson<HighScoreList>(resultStr);
                 updateHighScoreTextArea = true;
                 InsertToLog("Response received succesfully ");
                 Debug.Log("Received(UTF8): " + resultStr);
@@ -124,13 +128,19 @@ public class BackendHandler : MonoBehaviour
             else
             {
                 // create HighScore item from json string
-                hs = JsonUtility.FromJson<HighScores>(resultStr);
+                hs = JsonUtility.FromJson<HighScoreList>(resultStr);
                 InsertToLog("Response received succesfully ");
                 Debug.Log("Received(UTF8): " + resultStr);
                 Debug.Log("First item:" + hs.scores[0].playerName + " score: " + hs.scores[0].score);
                 Debug.Log("Received(HS): " + JsonUtility.ToJson(hs));
             }
         }
+    }
+
+    // Public method to get high scores
+    public HighScoreList GetHighScores()
+    {
+        return hs;
     }
 
     // :
@@ -175,6 +185,9 @@ public class BackendHandler : MonoBehaviour
             {
                 InsertToLog("POST request succesful");
                 Debug.Log("Received(UTF8): " + resultStr);
+
+                // Notify GameManager to sync local cache
+                GameManager.Instance.highScoreManager.SyncWithBackend();
             }
         }
     }
