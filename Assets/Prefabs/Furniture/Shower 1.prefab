@@ -84,7 +84,7 @@ PrefabInstance:
     - target: {fileID: -3691223482772915046, guid: a489b505281bb1f439b6ba4b9294e87f, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: d5ca08f10cb7ad84ba3f93abed4bc4a1, type: 2}
+      objectReference: {fileID: 2100000, guid: 76cb84b45a6cc0a4c8047dc0bebf7733, type: 2}
     - target: {fileID: 919132149155446097, guid: a489b505281bb1f439b6ba4b9294e87f, type: 3}
       propertyPath: m_Name
       value: showercurtain
@@ -225,11 +225,89 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5873803983423791845, guid: a3478dfac85fc944db2a66466b427291, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5532433499594703174}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3478dfac85fc944db2a66466b427291, type: 3}
+--- !u!4 &5556723070147044700 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5873803983423791845, guid: a3478dfac85fc944db2a66466b427291, type: 3}
+  m_PrefabInstance: {fileID: 2062230450640439225}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6633951879537443044 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4651668372498909021, guid: a3478dfac85fc944db2a66466b427291, type: 3}
   m_PrefabInstance: {fileID: 2062230450640439225}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6562820707603403553
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5556723070147044700}
+    m_Modifications:
+    - target: {fileID: 1717266038868349543, guid: 26d3d09db41e12f4e80cd7976aab7630, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.36021042
+      objectReference: {fileID: 0}
+    - target: {fileID: 1717266038868349543, guid: 26d3d09db41e12f4e80cd7976aab7630, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0009999275
+      objectReference: {fileID: 0}
+    - target: {fileID: 1717266038868349543, guid: 26d3d09db41e12f4e80cd7976aab7630, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.42960474
+      objectReference: {fileID: 0}
+    - target: {fileID: 1717266038868349543, guid: 26d3d09db41e12f4e80cd7976aab7630, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1717266038868349543, guid: 26d3d09db41e12f4e80cd7976aab7630, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000008940697
+      objectReference: {fileID: 0}
+    - target: {fileID: 1717266038868349543, guid: 26d3d09db41e12f4e80cd7976aab7630, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1717266038868349543, guid: 26d3d09db41e12f4e80cd7976aab7630, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1717266038868349543, guid: 26d3d09db41e12f4e80cd7976aab7630, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1717266038868349543, guid: 26d3d09db41e12f4e80cd7976aab7630, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1717266038868349543, guid: 26d3d09db41e12f4e80cd7976aab7630, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6404323404947949863, guid: 26d3d09db41e12f4e80cd7976aab7630, type: 3}
+      propertyPath: m_Name
+      value: Shower_VFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 6404323404947949863, guid: 26d3d09db41e12f4e80cd7976aab7630, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7471262323337598996, guid: 26d3d09db41e12f4e80cd7976aab7630, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.02
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 26d3d09db41e12f4e80cd7976aab7630, type: 3}
+--- !u!4 &5532433499594703174 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1717266038868349543, guid: 26d3d09db41e12f4e80cd7976aab7630, type: 3}
+  m_PrefabInstance: {fileID: 6562820707603403553}
   m_PrefabAsset: {fileID: 0}
