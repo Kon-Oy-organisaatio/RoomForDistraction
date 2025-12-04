@@ -32,41 +32,41 @@ public class SpawnManager : MonoBehaviour
 
         int spawnIndex = 0;
 
+        // Spawn targets
         foreach (var prefab in targetItems)
         {
             if (spawnIndex >= points.Count) break;
+            if (prefab == null) continue;
+
             SpawnAt(points[spawnIndex], prefab);
             spawnIndex++;
         }
 
+        // Spawn distractions
         foreach (var prefab in distractionItems)
         {
             if (spawnIndex >= points.Count) break;
+            if (prefab == null) continue;
+
             SpawnAt(points[spawnIndex], prefab);
             spawnIndex++;
         }
 
         Debug.Log($"SpawnManager: Spawned {spawnIndex}/{totalRequested} requested items.");
     }
+
     private void SpawnAt(SpawnPoint spawnPoint, GameObject prefab)
     {
         if (spawnPoint == null || prefab == null) return;
 
-        // Calculate spawn position slightly above the spawn point to avoid clipping
         Vector3 spawnPos = spawnPoint.transform.position + Vector3.up * 0.01f;
-
-        // Instantiate with prefab's default rotation
         GameObject instance = Instantiate(prefab, spawnPos, prefab.transform.rotation);
 
-        // Rotation for water bottle
         if (instance.CompareTag("Juomapullo"))
         {
             instance.transform.Rotate(0f, 90f, 0f);
         }
 
-        // Set the instantiated object's parent to the spawn point for better organization in the hierarchy
         instance.transform.SetParent(spawnPoint.transform);
     }
-
-
 }

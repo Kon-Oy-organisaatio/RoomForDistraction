@@ -23,6 +23,9 @@ public class ItemManager : MonoBehaviour
     /// </summary>
     public void InitializeItems()
     {
+        targetItems.Clear();
+        distractionItems.Clear();
+
         if (itemPool == null || itemPool.itemPrefabs.Length < targetCount + distractionCount)
         {
             Debug.LogError("ItemManager: Not enough items in ItemPool. Need at least "
@@ -58,7 +61,7 @@ public class ItemManager : MonoBehaviour
         // Send both sets to SpawnManager for placement
         if (spawnManager != null)
         {
-             spawnManager.SpawnItems(targetItems, distractionItems);
+            spawnManager.SpawnItems(targetItems, distractionItems);
         }
 
         Debug.Log("ItemManager: Initialized with " + targetItems.Count + " targets and " + distractionItems.Count + " distractions.");
@@ -73,11 +76,14 @@ public class ItemManager : MonoBehaviour
         foreach (GameObject target in targetItems)
         {
             ItemBehavior script = target.GetComponent<ItemBehavior>();
-            Debug.Log((script != null) ? script.itemName : "No ItemBehavior script found on target item.  " + target.name);
-            checklistUI.items.Add(new ItemEntry(script.itemName)
+            if (script == null)
             {
-                isCorrect = true
-            });
+                Debug.LogError("ItemManager: Target prefab missing ItemBehavior: " + target.name);
+                continue;
+            }
+
+            // ChecklistUI only has AddItem(string)
+            checklistUI.AddItem(script.itemName);
         }
 
         checklistUI.RedrawList();
@@ -91,6 +97,7 @@ public class ItemManager : MonoBehaviour
     {
         if (checklistUI != null)
         {
+            // ChecklistUI only has UpdateChecklist(string)
             checklistUI.UpdateChecklist(itemName);
         }
     }
@@ -98,8 +105,6 @@ public class ItemManager : MonoBehaviour
     /// <summary>
     /// Checks if the given item name is in the target items list.
     /// </summary>
-    /// <param name="itemName"></param>
-    /// <returns> True if the item is a target item, false otherwise. </returns>
     public bool IsCorrectItem(string itemName)
     {
         foreach (GameObject target in targetItems)

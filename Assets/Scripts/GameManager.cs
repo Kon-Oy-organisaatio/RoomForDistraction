@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
         playerData.AnimationMultiplier = 1f;
         if (string.IsNullOrEmpty(playerData.PlayerName)) playerData.PlayerName = "Player";
         pauseManager.isGameOver = false;
-        gameOverCanvas.enabled = false; // ensure hidden at start
+        gameOverCanvas.enabled = false;
         StartCoroutine(DelayedInit());
     }
 
@@ -40,15 +40,6 @@ public class GameManager : MonoBehaviour
         if (itemManager != null)
         {
             itemManager.InitializeItems();
-
-            if (spawnManager != null)
-            {
-                spawnManager.SpawnItems(itemManager.GetTargetItems(), itemManager.GetDistractionItems());
-            }
-            else
-            {
-                Debug.LogWarning("GameManager: No SpawnManager assigned!");
-            }
         }
     }
 

@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 2051167382523284234}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.000337, y: -0, z: 0.000014}
+  m_LocalPosition: {x: -0.00113, y: 0, z: 0.00001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -71,7 +71,7 @@ Transform:
   m_GameObject: {fileID: 5556943163155332333}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.00056, y: 0, z: -0.00188}
+  m_LocalPosition: {x: -0.00129, y: 0, z: -0.00188}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -226,7 +226,7 @@ PrefabInstance:
       addedObject: {fileID: 336200233163749949}
     - targetCorrespondingSourceObject: {fileID: 3996001955324183369, guid: 0c7a23ea38f91114da759d653e0cb950, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1665434380860152992}
+      addedObject: {fileID: 7642098799504743355}
   m_SourcePrefab: {fileID: 100100000, guid: 0c7a23ea38f91114da759d653e0cb950, type: 3}
 --- !u!1 &886578411217916033 stripped
 GameObject:
@@ -258,6 +258,8 @@ MonoBehaviour:
   disableInteractionAfterAnimation: 0
   openAudio: {fileID: 0}
   closeAudio: {fileID: 0}
+  state: 0
+  closeTargets: []
   disabled: 0
 --- !u!65 &336200233163749949
 BoxCollider:
@@ -280,7 +282,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.00031858654, y: 0.0059999996, z: 0.0014661398}
   m_Center: {x: -0.0027756665, y: -2.0686894e-18, z: 0.00058633107}
---- !u!65 &1665434380860152992
+--- !u!65 &7642098799504743355
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -299,8 +301,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0055435225, y: 0.0059999996, z: 0}
-  m_Center: {x: -0.00016320168, y: 5.189026e-19, z: -0.0001467386}
+  m_Size: {x: 0.0055435225, y: 0.0059999996, z: 0.000039041064}
+  m_Center: {x: -0.00016320168, y: 1.5786008e-19, z: -0.00006421878}
 --- !u!4 &7264715047170318687 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -2312572995132689769, guid: 0c7a23ea38f91114da759d653e0cb950, type: 3}
@@ -341,6 +343,8 @@ MonoBehaviour:
   disableInteractionAfterAnimation: 0
   openAudio: {fileID: 0}
   closeAudio: {fileID: 0}
+  state: 0
+  closeTargets: []
   disabled: 0
 --- !u!65 &7597752655019928723
 BoxCollider:

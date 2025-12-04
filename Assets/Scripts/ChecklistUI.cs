@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-using System.Collections;
 
 [System.Serializable]
 public class ItemEntry
@@ -21,7 +20,6 @@ public class ItemEntry
 
 public class ChecklistUI : MonoBehaviour
 {
-    // public for testing purposes
     public List<ItemEntry> items;
     public Canvas Notelist;
     public Color defaultColor;
@@ -40,7 +38,6 @@ public class ChecklistUI : MonoBehaviour
 
         items = new List<ItemEntry>();
 
-        // Cache UI references
         Transform itemsRoot = Notelist.transform.Find("Items");
         Transform strikesRoot = Notelist.transform.Find("Strikes");
 
@@ -53,7 +50,6 @@ public class ChecklistUI : MonoBehaviour
             imageElements = strikesRoot.GetComponentsInChildren<Image>();
         }
 
-        // Initialize UI elements
         if (textElements != null && imageElements != null)
         {
             for (int i = 0; i < textElements.Length; i++)
@@ -68,29 +64,14 @@ public class ChecklistUI : MonoBehaviour
         }
     }
 
-// #if UNITY_EDITOR
-//     public void Start()
-//     {
-//         // Editor-only auto-refresh for debugging
-//         StartCoroutine(UpdateChecklist());
-//     }
-
-//     IEnumerator UpdateChecklist()
-//     {
-//         while (true)
-//         {
-//             RedrawList();
-//             yield return new WaitForSeconds(1f);
-//         }
-//     }
-// #endif
-
+    // Add targets at initialization
     public void AddItem(string itemName)
     {
         items.Add(new ItemEntry(itemName));
         RedrawList();
     }
 
+    // Update when an item is picked
     public void UpdateChecklist(string itemName)
     {
         foreach (ItemEntry item in items)
@@ -103,7 +84,7 @@ public class ChecklistUI : MonoBehaviour
                 return;
             }
         }
-        // If not found, add as incorrect
+
         items.Add(new ItemEntry(itemName) { isChecked = true, isCorrect = false });
         RedrawList();
     }
