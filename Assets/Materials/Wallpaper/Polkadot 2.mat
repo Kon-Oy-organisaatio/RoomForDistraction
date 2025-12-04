@@ -112,7 +112,7 @@ Material:
     - _GlossyReflections: 0
     - _Metallic: 0
     - _Normal_Rotation: 0
-    - _Normal_Strength: 1
+    - _Normal_Strength: 0.05
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _PatternMetallic: 0
@@ -141,7 +141,7 @@ Material:
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
     - _PatternColor: {r: 0.76470596, g: 0.8117648, b: 0.76470596, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _Tiling: {r: 20, g: 20, b: 0, a: 0}
+    - _Tiling: {r: 40, g: 40, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &7963746771998097164
