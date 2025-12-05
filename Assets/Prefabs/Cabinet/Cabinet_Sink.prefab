@@ -190,31 +190,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 2e586be51b226664fb27e202171deab0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.4816725
+      value: -0.78866005
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2e586be51b226664fb27e202171deab0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.01
+      value: 0.348
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2e586be51b226664fb27e202171deab0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.6835656
+      value: -2.94118
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2e586be51b226664fb27e202171deab0, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.70710784
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2e586be51b226664fb27e202171deab0, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2e586be51b226664fb27e202171deab0, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.70710576
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2e586be51b226664fb27e202171deab0, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2e586be51b226664fb27e202171deab0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -222,7 +222,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2e586be51b226664fb27e202171deab0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2e586be51b226664fb27e202171deab0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -400,7 +400,7 @@ MonoBehaviour:
   state: 0
   closeTargets: []
   disabled: 0
-  se: {fileID: 2433966919775224699}
+  stopEmitScript: {fileID: 2433966919775224699}
 --- !u!1 &5206783276029957821 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1756443162215770420, guid: 2e586be51b226664fb27e202171deab0, type: 3}
