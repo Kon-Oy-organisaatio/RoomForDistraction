@@ -40,8 +40,11 @@ public class ItemBehavior : MonoBehaviour, IInteractable
     public void Interact()
     {
         Debug.Log("Picked up: " + itemName);
-        GameManager.Instance.OnItemPickup(itemName);
-        Destroy(gameObject);
+        if (!GameManager.Instance.cozyMode)
+        {
+            GameManager.Instance.OnItemPickup(itemName);
+            Destroy(gameObject);
+        }
     }
 
     public string GetDescription()

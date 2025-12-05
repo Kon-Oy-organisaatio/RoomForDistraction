@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
 
     private float gameTime = 0f;
     public float gameDuration = 30f;
+    public bool cozyMode = false;
 
     public Canvas gameOverCanvas;
 
@@ -115,6 +116,10 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
+        if(cozyMode)
+        {
+            return;
+        }
         if (gameOverHandled)
         {
             clockUI.UpdateClock(gameDuration, gameDuration);

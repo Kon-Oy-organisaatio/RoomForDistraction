@@ -42,7 +42,7 @@ public class BackendHandler : MonoBehaviour
     void Update()
     {
         //logTextArea.text = log;
-        if (updateHighScoreTextArea)
+        if (updateHighScoreTextArea && highScoresTextArea != null)
         {
             highScoresTextArea.text = CreateHighScoreList();
             updateHighScoreTextArea = false;
