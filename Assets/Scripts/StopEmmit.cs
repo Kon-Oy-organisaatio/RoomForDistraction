@@ -1,14 +1,13 @@
 using UnityEngine;
-using UnityEngine.Android;
 
 public class StopEmmit : MonoBehaviour
 {
-    public ParticleSystem waterFlow;
+    public ParticleSystem particleEffect;
     public bool stop = false;
 
     private void Update()
     {
-        var emission = waterFlow.emission;
+        var emission = particleEffect.emission;
 
         if (stop)
         {
@@ -20,4 +19,15 @@ public class StopEmmit : MonoBehaviour
         }
     }
 
+    public void TogleEmmit()
+    {
+        if (stop)
+        {
+            stop = false;
+        }
+        else
+        {
+            stop = true;
+        }
+    }
 }
