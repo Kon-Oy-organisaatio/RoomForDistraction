@@ -32,7 +32,7 @@ public class HighScoreManager : MonoBehaviour
     {
         highScores.Add(score);
         SaveScores(highScores);
-        backendHandler.PostGameResults();
+        backendHandler.PostGameResults(score);
     }
 
     // Merge backend scores into local cache
