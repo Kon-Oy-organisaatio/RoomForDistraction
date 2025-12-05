@@ -56,10 +56,11 @@ public class BackendHandler : MonoBehaviour
             int len = (hs.scores.Length < 5) ? hs.scores.Length : 5; for (int i = 0; i < len; i++)
             {
                 /* hsList += hs.scores[i].playername + ": \t" + hs.scores[i].score + " \t" + hs.scores[i].playtime+"\n"; */
-                hsList += string.Format("[ {0} ] | {1,-15} | {2,5} | {3,-15}\n", (i + 1),
+                float seconds = hs.scores[i].mstime / 1000f;
+                hsList += string.Format("[ {0} ] | {1,-15} | {2,5} | {3,-15:F2}s\n", (i + 1),
                     hs.scores[i].playerName,
                     hs.scores[i].score,
-                    hs.scores[i].mstime);
+                    seconds);
             }
         }
         return hsList;
@@ -123,11 +124,13 @@ public class BackendHandler : MonoBehaviour
     }
 
     // post high score to backend
-    IEnumerator PostRequestForHighScores(string uri, HighScore hsItem)
+    IEnumerator PostRequestForHighScores(string uri, HighScore scores)
+
     {
-        using (UnityWebRequest webRequest = UnityWebRequest.PostWwwForm(uri, JsonUtility.ToJson(hsItem)))
+        using (UnityWebRequest webRequest = UnityWebRequest.PostWwwForm(uri, JsonUtility.ToJson(scores)))
         {
-            InsertToLog("POST request sent to " + uri);
+            Debug.Log("Posting high score to backend: " + JsonUtility.ToJson(scores));
+            Debug.Log("POST request sent to " + uri);
             // set downloadHandler for json
             webRequest.downloadHandler = new DownloadHandlerBuffer();
             webRequest.SetRequestHeader("Content-Type", "application/json");
@@ -138,12 +141,10 @@ public class BackendHandler : MonoBehaviour
             string resultStr = System.Text.Encoding.UTF8.GetString(webRequest.downloadHandler.data);
             if (webRequest.result == UnityWebRequest.Result.ConnectionError)
             {
-                InsertToLog("Error encountered in post request: " + webRequest.error);
                 Debug.Log("Error in post request: " + webRequest.error);
             }
             else
             {
-                InsertToLog("POST request succesful");
                 Debug.Log("Received(UTF8): " + resultStr);
 
                 // Notify GameManager to sync local cache

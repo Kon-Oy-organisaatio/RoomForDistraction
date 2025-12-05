@@ -108,7 +108,7 @@ public class GameManager : MonoBehaviour
 
         if (highest != null)
         {
-            Debug.Log($"Highest score so far: {highest.playerName} with {highest.score}");
+            Debug.Log($"Highest score so far: {highest.playerName} with {highest.score} {highest.mstime}ms");
         }
     }
 
