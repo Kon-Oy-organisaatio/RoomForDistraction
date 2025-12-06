@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5321379209472461798}
   - component: {fileID: 8127315483482164366}
   - component: {fileID: 3537335843665790858}
+  - component: {fileID: 743729986047667193}
   m_Layer: 0
   m_Name: Bedframe
   m_TagString: Untagged
@@ -86,6 +87,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &743729986047667193
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175851003943690280}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.91488606, y: 2.15333, z: 0.34187004}
+  m_Center: {x: 0.00000003676697, y: 0.00000008966094, z: 0.16524638}
 --- !u!1001 &4611164473318213087
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -144,7 +166,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 33da6fba7fcf4e640b1e193c19c3057c, type: 2}
     - target: {fileID: 919132149155446097, guid: 81c9887a4dee7684f98f03ff0b7a1048, type: 3}
       propertyPath: m_Name
-      value: bed 1
+      value: Bed
       objectReference: {fileID: 0}
     - target: {fileID: 1585365240795756416, guid: 81c9887a4dee7684f98f03ff0b7a1048, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'

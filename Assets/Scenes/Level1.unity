@@ -21802,6 +21802,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScriptUI_Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 3626975136803659302, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
+      propertyPath: distractionCount
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4206143020099245099, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
       propertyPath: m_Enabled
       value: 0
