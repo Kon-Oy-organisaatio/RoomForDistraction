@@ -13,7 +13,9 @@ public class RadioPlayer : MonoBehaviour
         audioSource = gameObject.AddComponent<AudioSource>();
         if (audioClips.Length > 0)
         {
-            audioSource.clip = audioClips[0];
+            currentClipIndex = Random.Range(0, audioClips.Length);
+            // delays the first clip a bit
+            //audioSource.clip = audioClips[currentClipIndex];
             // 3d sound
             audioSource.spatialBlend = 1.0f;
             audioSource.Play();
