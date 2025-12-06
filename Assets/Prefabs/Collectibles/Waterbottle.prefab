@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: a5fce3f30989a1d498c4c8c89023c70a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 81.62
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a5fce3f30989a1d498c4c8c89023c70a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 81.62
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a5fce3f30989a1d498c4c8c89023c70a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 81.62
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a5fce3f30989a1d498c4c8c89023c70a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -120,6 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34b4d7d91e73eab4eb6234b1a1c6964e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  outline: {fileID: 0}
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 5
   useAction: 'Poimi '

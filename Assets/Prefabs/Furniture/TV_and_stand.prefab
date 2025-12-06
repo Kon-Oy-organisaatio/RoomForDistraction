@@ -25,13 +25,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2047075698039748175}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.000000021073431, z: 0.00000006322027, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -0.0031900015, y: -0.00471, z: 0.01002}
   m_LocalScale: {x: 3.3681414, y: 2.8712273, z: 4.4149218}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3045447367509545018}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &5286570680907986796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,13 +160,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6428428737332833080}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.000000021073431, z: 0.00000006322027, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -0.00319, y: 0.00366, z: 0.01008}
   m_LocalScale: {x: 3.3681414, y: 2.8712273, z: 4.4149218}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8860137148148839379}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &2040001067390556595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -352,13 +352,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7384431330190862472}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.000000021073431, z: 0.00000006322027, w: 1}
-  m_LocalPosition: {x: -0.0044, y: -0.00095, z: 0.00224}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -0.0065, y: -0.00095, z: 0.00224}
   m_LocalScale: {x: 3.3681414, y: 2.8712273, z: 4.4149218}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3045447367509545018}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &8751535421076818519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -397,13 +397,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7946684921566121874}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.000000021073431, z: 0.00000006322027, w: 1}
-  m_LocalPosition: {x: -0.0048, y: -0.00022, z: 0.00224}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -0.0064, y: -0.00022, z: 0.00224}
   m_LocalScale: {x: 3.3681414, y: 2.8712273, z: 4.4149218}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6756710368560503606}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &348036530902379574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -442,13 +442,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8075977578627700319}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.00000002107343, z: 0.00000006322027, w: 1}
-  m_LocalPosition: {x: -0.00459, y: 0, z: 0.00224}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -0.007, y: 0, z: 0.00224}
   m_LocalScale: {x: 3.3681414, y: 2.8712273, z: 4.4149218}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8860137148148839379}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &962368269888443981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -747,6 +747,8 @@ MonoBehaviour:
   disableInteractionAfterAnimation: 0
   openAudio: {fileID: 0}
   closeAudio: {fileID: 0}
+  state: 0
+  closeTargets: []
   disabled: 0
 --- !u!65 &2684911452128311375
 BoxCollider:
@@ -856,6 +858,8 @@ MonoBehaviour:
   disableInteractionAfterAnimation: 0
   openAudio: {fileID: 0}
   closeAudio: {fileID: 0}
+  state: 0
+  closeTargets: []
   disabled: 0
 --- !u!65 &3154510843987755672
 BoxCollider:
@@ -986,6 +990,8 @@ MonoBehaviour:
   disableInteractionAfterAnimation: 0
   openAudio: {fileID: 0}
   closeAudio: {fileID: 0}
+  state: 0
+  closeTargets: []
   disabled: 0
 --- !u!65 &315444281991089321
 BoxCollider:
@@ -1059,6 +1065,8 @@ MonoBehaviour:
   disableInteractionAfterAnimation: 0
   openAudio: {fileID: 0}
   closeAudio: {fileID: 0}
+  state: 0
+  closeTargets: []
   disabled: 0
 --- !u!65 &894783188486232369
 BoxCollider:

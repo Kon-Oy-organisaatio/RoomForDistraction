@@ -213,6 +213,8 @@ MonoBehaviour:
   disableInteractionAfterAnimation: 0
   openAudio: {fileID: 0}
   closeAudio: {fileID: 0}
+  state: 0
+  closeTargets: []
   disabled: 0
 --- !u!65 &7123893283014874991
 BoxCollider:
