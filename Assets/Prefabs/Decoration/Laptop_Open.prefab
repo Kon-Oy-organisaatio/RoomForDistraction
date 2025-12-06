@@ -62,7 +62,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 75af7b1ec47b560478e1045c8fc22111, type: 2}
     - target: {fileID: 919132149155446097, guid: 1de6039e3053b824ea65b13aca1194d8, type: 3}
       propertyPath: m_Name
-      value: Laptop
+      value: Laptop_Open
       objectReference: {fileID: 0}
     - target: {fileID: 7418098771544918504, guid: 1de6039e3053b824ea65b13aca1194d8, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -75,5 +75,70 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4027228791024609348, guid: 1de6039e3053b824ea65b13aca1194d8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1769244657374708278}
+    - targetCorrespondingSourceObject: {fileID: 4027228791024609348, guid: 1de6039e3053b824ea65b13aca1194d8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7778251512173011786}
   m_SourcePrefab: {fileID: 100100000, guid: 1de6039e3053b824ea65b13aca1194d8, type: 3}
+--- !u!1 &6641160750435737063 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1de6039e3053b824ea65b13aca1194d8, type: 3}
+  m_PrefabInstance: {fileID: 5830839173349646518}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7424424135793527026 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4027228791024609348, guid: 1de6039e3053b824ea65b13aca1194d8, type: 3}
+  m_PrefabInstance: {fileID: 5830839173349646518}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1769244657374708278
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7424424135793527026}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0035999997, y: 0.0005296968, z: 0.0024683273}
+  m_Center: {x: -1.1641532e-10, y: 0.00026484847, z: 0.001222053}
+--- !u!114 &7778251512173011786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7424424135793527026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a91fb61b22240a34bbee79d50943ad03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToOutline: {fileID: 6641160750435737063}
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 5
+  objectToAnimate: {fileID: 0}
+  relativePosition: {x: 0, y: 0, z: 0}
+  relativeRotation: {x: 100, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  animationDuration: 0.5
+  useAction: Sulje/Avaa
+  activationTarget: {fileID: 0}
+  disableInteractionAfterAnimation: 0
+  openAudio: {fileID: 0}
+  closeAudio: {fileID: 0}
+  state: 0
+  closeTargets: []
+  disabled: 0
