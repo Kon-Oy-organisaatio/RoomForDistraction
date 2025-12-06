@@ -113,6 +113,7 @@ namespace Player_Script
         private void Awake()
         {
             characterController.radius = preset.characterControllerRadius;
+            if (characterController != null) characterController.stepOffset = preset.stepUpHeight;
         }
 
         private void OnValidate()

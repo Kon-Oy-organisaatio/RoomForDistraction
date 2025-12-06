@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7917628738284980059
 Transform:
   m_ObjectHideFlags: 0
@@ -106,7 +106,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5631733897791901015
 Transform:
   m_ObjectHideFlags: 0
@@ -151,7 +151,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &21859150051063775
 Transform:
   m_ObjectHideFlags: 0
@@ -241,7 +241,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1501080636859292802
 Transform:
   m_ObjectHideFlags: 0
@@ -507,7 +507,7 @@ PrefabInstance:
       addedObject: {fileID: 5831907460967645399}
     - targetCorrespondingSourceObject: {fileID: 280936700391525606, guid: aff3d23952713cb4c832ef97bbf223ed, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8115948373705593288}
+      addedObject: {fileID: 5786579236375846532}
   m_SourcePrefab: {fileID: 100100000, guid: aff3d23952713cb4c832ef97bbf223ed, type: 3}
 --- !u!4 &594940244426628091 stripped
 Transform:
@@ -547,7 +547,7 @@ MonoBehaviour:
   state: 0
   closeTargets: []
   disabled: 0
---- !u!65 &8115948373705593288
+--- !u!65 &5786579236375846532
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -562,12 +562,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0006501834, y: 0.0039999997, z: 0.006999999}
-  m_Center: {x: -0.0003250917, y: 0.0019999992, z: 1.13621335e-10}
+  m_Size: {x: 0.00065218896, y: 0.0039999993, z: 0.0069999984}
+  m_Center: {x: -0.00032609448, y: -0.0019999992, z: 0}
 --- !u!1 &5050834887477741479 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3903717161547482185, guid: aff3d23952713cb4c832ef97bbf223ed, type: 3}
@@ -616,7 +616,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
