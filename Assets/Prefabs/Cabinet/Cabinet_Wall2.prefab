@@ -347,6 +347,8 @@ MonoBehaviour:
   disableInteractionAfterAnimation: 0
   openAudio: {fileID: 0}
   closeAudio: {fileID: 0}
+  state: 0
+  closeTargets: []
   disabled: 0
 --- !u!65 &1331172881705320440
 BoxCollider:
@@ -363,7 +365,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
