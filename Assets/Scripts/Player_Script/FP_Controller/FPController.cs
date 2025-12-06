@@ -1,4 +1,5 @@
 using Unity.Cinemachine;
+using Unity.Multiplayer.Center.Common;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -109,6 +110,11 @@ namespace Player_Script
 
         #region Unity Methods
 
+        private void Awake()
+        {
+            characterController.radius = preset.characterControllerRadius;
+        }
+
         private void OnValidate()
         {
             if (characterController == null)
@@ -127,19 +133,19 @@ namespace Player_Script
             CameraUpdate();
 
             // Updating Camera posotion
-            Vector3 targetCameraPosition = Vector3.up * 1.6f;
+            Vector3 targetCameraPosition = Vector3.up * preset.playerCameraStandingHeight; // Standing CAMERA height
 
             if (Activity.IsActive(Crouch))
             {
-                targetCameraPosition = Vector3.up * 0.9f;
+                targetCameraPosition = Vector3.up * preset.playerCameraCrouchingHeight; // Crouching CAMERA height
 
-                characterController.height = 1f;
-                characterController.center = Vector3.up * 0.5f;
+                characterController.height = preset.playerCameraCrouchingHeight; // crouching PLAYERCONTROLLER height
+                characterController.center = Vector3.up * (preset.playerCameraCrouchingHeight/ 2); // Should be half of crouching PC height
             }
             else
             {
-                characterController.height = 2f;
-                characterController.center = Vector3.up * 1f;
+                characterController.height = preset.playerCameraStandingHeight; // Standing PLAYERCONTROLLER height
+                characterController.center = Vector3.up * (preset.playerCameraStandingHeight / 2); // Should be half of standing PC height
             }
 
                 currentCameraPosition = Vector3.Lerp(currentCameraPosition, targetCameraPosition, 7f * Time.deltaTime);
