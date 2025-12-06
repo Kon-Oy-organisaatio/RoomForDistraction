@@ -7,6 +7,7 @@ namespace Player_Script
     {
         [Header("Movement Parameters")]
         public float acceleration = 15f;
+        public float stepUpHeight = 0.3f;
 
         [Space(15)]
         public float crouchSpeed = 2f;

@@ -109,6 +109,11 @@ namespace Player_Script
 
         #region Unity Methods
 
+        private void Awake()
+        {
+            if (characterController != null) characterController.stepOffset = preset.stepUpHeight;
+        }
+
         private void OnValidate()
         {
             if (characterController == null)
