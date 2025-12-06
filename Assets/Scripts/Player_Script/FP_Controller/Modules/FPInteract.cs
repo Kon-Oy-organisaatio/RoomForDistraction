@@ -9,6 +9,7 @@ namespace Player_Script
 
         public GameObject interactionUI;
         public TextMeshProUGUI interactionText;
+        readonly int excludeLayers = ~(1 << 7);
 
         private IInteractable currentInteractable;
 
@@ -47,7 +48,7 @@ namespace Player_Script
             bool hitSomething = false;
 
 
-            if(Physics.Raycast(ray, out hit, preset.interactionDistance))
+            if(Physics.Raycast(ray, out hit, preset.interactionDistance, excludeLayers))
             {
                 IInteractable interactable = hit.collider.GetComponent<IInteractable>();
 

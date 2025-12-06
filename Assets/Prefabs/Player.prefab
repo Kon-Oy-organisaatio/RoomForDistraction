@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6183158391129907351}
   - component: {fileID: 6912512664606066057}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FPCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 5673800373786388881}
   - component: {fileID: 8529966716106129182}
   - component: {fileID: 9109341070180550541}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -242,7 +242,7 @@ GameObject:
   - component: {fileID: 7094063047621680861}
   - component: {fileID: 4572176828145563517}
   - component: {fileID: 4726875842657390593}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FPModules
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -606,9 +606,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 824348075248966436, guid: 67a1da14b166ec248bda1bdf0e8ded4a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2352648499633733996, guid: 67a1da14b166ec248bda1bdf0e8ded4a, type: 3}
       propertyPath: m_Name
       value: PlayerInteractCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352648499633733996, guid: 67a1da14b166ec248bda1bdf0e8ded4a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6060985977661588834, guid: 67a1da14b166ec248bda1bdf0e8ded4a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7853568564597395063, guid: 67a1da14b166ec248bda1bdf0e8ded4a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8696829448327831261, guid: 67a1da14b166ec248bda1bdf0e8ded4a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
