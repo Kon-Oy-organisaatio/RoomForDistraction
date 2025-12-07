@@ -24,7 +24,7 @@ MonoBehaviour:
   cameraNormalFOV: 60
   cameraSprintFOV: 67.5
   cameraFOVSmoothing: 5
-  playerCameraStandingHeight: 1.85
+  playerCameraStandingHeight: 1.6
   playerCameraCrouchingHeight: 0.9
   characterControllerRadius: 0.2
   headBobWalk:
