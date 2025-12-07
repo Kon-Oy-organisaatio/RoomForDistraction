@@ -2,21 +2,6 @@ using UnityEngine;
 using System.IO;
 using System.Collections.Generic;
 
-public class HighScoreComparer : IComparer<HighScore>
-{
-    public int Compare(HighScore x, HighScore y)
-    {
-        // Sort by score descending, then by mstime ascending, then by name
-        int scoreCompare = y.score.CompareTo(x.score);
-        if (scoreCompare != 0) return scoreCompare;
-
-        int timeCompare = x.mstime.CompareTo(y.mstime);
-        if (timeCompare != 0) return timeCompare;
-
-        return string.Compare(x.playerName, y.playerName);
-    }
-}
-
 public class HighScoreManager : MonoBehaviour
 {
     public BackendHandler backendHandler;
@@ -48,14 +33,12 @@ public class HighScoreManager : MonoBehaviour
 
     public List<HighScore> GetTopScores(int count = 5)
     {
-        highScores.Sort(new HighScoreComparer());
         return highScores.GetRange(0, Mathf.Min(count, highScores.Count));
     }
 
     public HighScore GetHighestScore()
     {
         if (highScores.Count == 0) return null;
-        highScores.Sort(new HighScoreComparer());
         return highScores[0];
     }
 
