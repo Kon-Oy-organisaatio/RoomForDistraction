@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.IO;
 using System.Collections.Generic;
 
 public class HighScoreManager : MonoBehaviour
@@ -9,25 +8,31 @@ public class HighScoreManager : MonoBehaviour
 
     void Awake()
     {
-        highScores = LoadScores();
+        // Always sync from backend at startup
+        SyncWithBackend();
     }
 
     // Called when a new score is achieved
     public void AddScore(HighScore score)
     {
-        highScores.Add(score);
-        SaveScores(highScores);
+        // Post directly to backend
         backendHandler.PostGameResults(score);
+
+        // Refresh local list from backend
+        SyncWithBackend();
     }
 
-    // Merge backend scores into local cache
+    // Merge backend scores into local list
     public void SyncWithBackend()
     {
         var scores = backendHandler.GetHighScores();
         if (scores != null && scores.scores.Length > 0)
         {
             highScores = new List<HighScore>(scores.scores);
-            SaveScores(highScores);
+        }
+        else
+        {
+            highScores = new List<HighScore>();
         }
     }
 
@@ -40,32 +45,5 @@ public class HighScoreManager : MonoBehaviour
     {
         if (highScores.Count == 0) return null;
         return highScores[0];
-    }
-
-    public static List<HighScore> LoadScores(string filename = "highscores.json")
-    {
-        string path = Path.Combine(Application.persistentDataPath, filename);
-        Debug.Log("Loading highscores from: " + path);
-
-        if (!File.Exists(path)) return new List<HighScore>();
-
-        string json = File.ReadAllText(path);
-        var wrapper = JsonUtility.FromJson<HighScoreListWrapper>(json);
-        return wrapper?.scores ?? new List<HighScore>();
-    }
-
-    public static void SaveScores(List<HighScore> highScores, string filename = "highscores.json")
-    {
-        string path = Path.Combine(Application.persistentDataPath, filename);
-        Debug.Log("Saving highscores to: " + path);
-
-        string json = JsonUtility.ToJson(new HighScoreListWrapper { scores = highScores });
-        File.WriteAllText(path, json);
-    }
-
-    [System.Serializable]
-    public class HighScoreListWrapper
-    {
-        public List<HighScore> scores;
     }
 }
