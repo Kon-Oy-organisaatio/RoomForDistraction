@@ -5315,6 +5315,10 @@ PrefabInstance:
       value: paper_stack
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 63eb1e390e526ec4eb4dc2f810d7521b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 63eb1e390e526ec4eb4dc2f810d7521b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -44798,6 +44802,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 8b687d74d948ce847bce8e1e0e50bc2c, type: 2}
+    - target: {fileID: 1268083206867752444, guid: ad4256ddde7ccd34aae4541112765f79, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1501786365129266373, guid: ad4256ddde7ccd34aae4541112765f79, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -44862,6 +44870,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2710514772047940136, guid: ad4256ddde7ccd34aae4541112765f79, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2776336834266272910, guid: ad4256ddde7ccd34aae4541112765f79, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -44925,6 +44937,10 @@ PrefabInstance:
     - target: {fileID: 3928627871760440192, guid: ad4256ddde7ccd34aae4541112765f79, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3932939768210768210, guid: ad4256ddde7ccd34aae4541112765f79, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3932939768210768210, guid: ad4256ddde7ccd34aae4541112765f79, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -45355,6 +45371,10 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 4012279252193204958, guid: ad4256ddde7ccd34aae4541112765f79, type: 3}
     - {fileID: 7132618034543946866, guid: ad4256ddde7ccd34aae4541112765f79, type: 3}
+    - {fileID: 7006366484669755942, guid: ad4256ddde7ccd34aae4541112765f79, type: 3}
+    - {fileID: 1268083206867752444, guid: ad4256ddde7ccd34aae4541112765f79, type: 3}
+    - {fileID: 2710514772047940136, guid: ad4256ddde7ccd34aae4541112765f79, type: 3}
+    - {fileID: 3932939768210768210, guid: ad4256ddde7ccd34aae4541112765f79, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5530552812677169619, guid: ad4256ddde7ccd34aae4541112765f79, type: 3}
       insertIndex: 0
