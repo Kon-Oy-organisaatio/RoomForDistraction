@@ -1,6 +1,7 @@
 **/blend/*.meta
 **.blend1
 **/psd/*.meta
+Build_PC
 
 # This .gitignore file should be placed at the root of your Unity project directory
 #
