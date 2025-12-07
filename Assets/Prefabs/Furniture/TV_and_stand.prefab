@@ -308,7 +308,7 @@ MonoBehaviour:
       audioClip: {fileID: 0}
       loop: 0
       volume: 1
-    duration: 1
+    duration: 15
   - material: {fileID: 2100000, guid: 95ddc805140bd594e8a884b0bdabe7a9, type: 2}
     sound:
       audioClip: {fileID: 8300000, guid: 192ef99e11818f74cace0bfb1729cfe7, type: 3}
@@ -320,7 +320,7 @@ MonoBehaviour:
       audioClip: {fileID: 0}
       loop: 1
       volume: 1
-    duration: 1
+    duration: 15
   - material: {fileID: 2100000, guid: 95ddc805140bd594e8a884b0bdabe7a9, type: 2}
     sound:
       audioClip: {fileID: 8300000, guid: 192ef99e11818f74cace0bfb1729cfe7, type: 3}
