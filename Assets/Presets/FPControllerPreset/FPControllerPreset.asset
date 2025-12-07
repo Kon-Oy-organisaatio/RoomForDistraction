@@ -54,4 +54,4 @@ MonoBehaviour:
   footstepSprintVolume: 0.8
   maxLandSoundVolume: 0.7
   jumpSoundVolume: 0.5
-  interactionDistance: 1.5
+  interactionDistance: 2
