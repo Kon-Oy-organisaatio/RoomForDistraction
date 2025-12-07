@@ -20,6 +20,7 @@ public class MainMenuHandler : MonoBehaviour
     public void SetPlayerName()
     {
         if (string.IsNullOrEmpty(playerNameInput.text)) return;
+        if (playerNameInput.text == "Player") return;
         playerData.PlayerName = playerNameInput.text;
         playerNameCanvas.SetActive(false);
         mainMenuCanvas.SetActive(true);
