@@ -31293,6 +31293,26 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5746367974137818720, guid: 90b4e80169eff2843838ce895fe6775d, type: 3}
+      propertyPath: m_Size.y
+      value: 0.003484178
+      objectReference: {fileID: 0}
+    - target: {fileID: 5746367974137818720, guid: 90b4e80169eff2843838ce895fe6775d, type: 3}
+      propertyPath: m_Size.z
+      value: 0.0016450472
+      objectReference: {fileID: 0}
+    - target: {fileID: 5746367974137818720, guid: 90b4e80169eff2843838ce895fe6775d, type: 3}
+      propertyPath: m_Center.x
+      value: 0.00013246211
+      objectReference: {fileID: 0}
+    - target: {fileID: 5746367974137818720, guid: 90b4e80169eff2843838ce895fe6775d, type: 3}
+      propertyPath: m_Center.y
+      value: 0.0012062675
+      objectReference: {fileID: 0}
+    - target: {fileID: 5746367974137818720, guid: 90b4e80169eff2843838ce895fe6775d, type: 3}
+      propertyPath: m_Center.z
+      value: 0.002677469
+      objectReference: {fileID: 0}
     - target: {fileID: 6095760753408762748, guid: 90b4e80169eff2843838ce895fe6775d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
