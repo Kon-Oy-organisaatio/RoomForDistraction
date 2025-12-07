@@ -1,9 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Assets.scripts;
 using UnityEngine.Networking;
-using Unity.VisualScripting;
 
 public class BackendHandler : MonoBehaviour
 {
@@ -14,12 +12,6 @@ public class BackendHandler : MonoBehaviour
     string log = "";
     // const string urlBackendHighScoresFile = "https://niisku.lab.fi/~konoy/RoomForDistraction/highscores.json";
     const string urlBackendHighScores = "https://niisku.lab.fi/~konoy/RoomForDistraction/api/highscores.php";
-    const string jsonTestStr =
-        "{ " +
-        "\"scores\":[ "
-        + "{\"id\":1, \"playerName\":\"Matti\",  \"score\":200, \"mstime\": 25000, \"collectedItems\":\"ItemA, ItemB\"} "
-        + "] " +
-        "}";
 
     private HighScoreList hs;
 
@@ -27,13 +19,6 @@ public class BackendHandler : MonoBehaviour
     void Start()
     {
         Debug.Log("BackendHandler started");
-        // conversion from JSON string to object
-        hs = JsonUtility.FromJson<HighScoreList>(jsonTestStr);
-        Debug.Log("HighScoreList name: " + hs.scores[0].playerName);
-        // conversion from object to JSON string
-        Debug.Log("HighScoreList as json: " + JsonUtility.ToJson(hs));
-
-        InsertToLog("BackendHandler started");
 
         StartCoroutine(GetRequestForHighScores(urlBackendHighScores));
     }
@@ -113,9 +98,6 @@ public class BackendHandler : MonoBehaviour
     {
         return hs;
     }
-
-    bool scoreInputsOk = false;
-
 
     public void PostGameResults(HighScore scores)
     {
