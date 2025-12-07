@@ -827,9 +827,10 @@ MonoBehaviour:
   pauseManager: {fileID: 6878154341650602215}
   itemPool: {fileID: 4149299774903381150}
   spawnManager: {fileID: 3817054329060663232}
-  gameDuration: 400
+  gameDuration: 60
   cozyMode: 0
   gameOverCanvas: {fileID: 6088851027161273797}
+  gameOverText: {fileID: 1327224824988958433}
 --- !u!114 &7957683551957665202
 MonoBehaviour:
   m_ObjectHideFlags: 0

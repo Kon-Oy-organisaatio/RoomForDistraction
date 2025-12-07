@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,8 +21,10 @@ public class GameManager : MonoBehaviour
     public bool cozyMode = false;
 
     public Canvas gameOverCanvas;
+    public TMP_Text gameOverText;
 
     private bool gameOverHandled = false;
+
 
     public void Start()
     {
@@ -58,6 +61,7 @@ public class GameManager : MonoBehaviour
         if (checklistUI.AllItemsCollected())
         {
             Debug.Log("GameManager: All items collected! Ending game.");
+            gameOverText.text = "Peli päättyi\nKeräsit kaikki esineet!";
             TriggerGameOver();
         }
     }
@@ -128,6 +132,7 @@ public class GameManager : MonoBehaviour
         gameTime += Time.deltaTime;
         if (gameTime >= gameDuration)
         {
+            gameOverText.text = "Peli päättyi\nAika loppui!";
             TriggerGameOver();
             clockUI.UpdateClock(gameDuration, gameDuration);
         }
