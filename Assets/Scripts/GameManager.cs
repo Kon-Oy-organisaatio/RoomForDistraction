@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
     public void Start()
     {
         Instance = this;
+        Time.timeScale = 1f;
         playerData.PlayerSpeedMultiplier = 1f;
         playerData.AnimationMultiplier = 1f;
         if (string.IsNullOrEmpty(playerData.PlayerName)) playerData.PlayerName = "Player";
