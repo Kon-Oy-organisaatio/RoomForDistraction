@@ -21839,6 +21839,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScriptUI_Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 2212684069506838627, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -678
+      objectReference: {fileID: 0}
+    - target: {fileID: 2212684069506838627, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 143
+      objectReference: {fileID: 0}
+    - target: {fileID: 7026892787892245691, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -698.5999
+      objectReference: {fileID: 0}
+    - target: {fileID: 7026892787892245691, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 464.00006
+      objectReference: {fileID: 0}
+    - target: {fileID: 7882688347288729896, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -89.599976
+      objectReference: {fileID: 0}
+    - target: {fileID: 7882688347288729896, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -37.999924
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202445480990828467, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -89.599976
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202445480990828467, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -37.99994
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
