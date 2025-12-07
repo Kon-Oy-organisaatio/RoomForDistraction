@@ -4,7 +4,6 @@ using System.Collections;
 
 public class RandomAnimationHandler : MonoBehaviour
 {
-    public PlayerData playerData;
     public GameObject randomHolder;
     public RandomAnimationParams animationParams;
 
