@@ -17,5 +17,5 @@ MonoBehaviour:
   scaleMax: 1.2
   rotationRange: 30
   speedMin: 0.01
-  speedMax: 0.1
+  speedMax: 0.3
   rotationSpeed: 0.5

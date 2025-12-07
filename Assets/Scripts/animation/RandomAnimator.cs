@@ -63,8 +63,8 @@ public class RandomAnimator : MonoBehaviour
 
         targetPosition = originalPosition + new Vector3(
             Random.Range(-animationParams.positionRange, animationParams.positionRange),
-            0f,
-            Random.Range(-animationParams.positionRange, animationParams.positionRange)
+            Random.Range(-animationParams.positionRange, animationParams.positionRange),
+            0f
         );
         float scaleFactor = Random.Range(animationParams.scaleMin, animationParams.scaleMax);
         targetScale = originalScale * scaleFactor;
