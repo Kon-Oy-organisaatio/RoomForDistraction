@@ -30,14 +30,14 @@ public class PauseManager : MonoBehaviour
     {
         Time.timeScale = 0f;
         isPaused = true;
-        //pauseMenuCanvas.enabled = true;
+        pauseMenuCanvas.enabled = true;
     }
 
     public void ResumeGame()
     {
         Time.timeScale = 1f;
         isPaused = false;
-        //pauseMenuCanvas.enabled = false;
+        pauseMenuCanvas.enabled = false;
     }
 
     public void EndGame()
