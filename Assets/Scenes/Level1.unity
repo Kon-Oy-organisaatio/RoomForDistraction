@@ -21835,73 +21835,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 681928866989764387, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1071006476350157805, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
       propertyPath: m_Name
       value: ScriptUI_Prefab
       objectReference: {fileID: 0}
-    - target: {fileID: 1122332519301428843, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1122332519301428843, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
-      propertyPath: m_isOrthographic
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2212684069506838627, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -678
-      objectReference: {fileID: 0}
-    - target: {fileID: 2212684069506838627, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 143
-      objectReference: {fileID: 0}
-    - target: {fileID: 3732433944289415175, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -205.46964
-      objectReference: {fileID: 0}
-    - target: {fileID: 3879608226420665279, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 27.395954
-      objectReference: {fileID: 0}
-    - target: {fileID: 4573270360500271410, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 61.640896
-      objectReference: {fileID: 0}
-    - target: {fileID: 7026892787892245691, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -698.5999
-      objectReference: {fileID: 0}
-    - target: {fileID: 7026892787892245691, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 464.00006
-      objectReference: {fileID: 0}
-    - target: {fileID: 7632335235803894892, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
-      propertyPath: highScoresTextArea
-      value: 
-      objectReference: {fileID: 1591404740}
-    - target: {fileID: 7882688347288729896, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -89.599976
-      objectReference: {fileID: 0}
-    - target: {fileID: 7882688347288729896, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -37.999924
-      objectReference: {fileID: 0}
-    - target: {fileID: 8202445480990828467, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -89.599976
-      objectReference: {fileID: 0}
-    - target: {fileID: 8202445480990828467, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -37.99994
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: -5089156729129107213, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
@@ -29295,17 +29234,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 358538669922844319, guid: b734756253a22ae4e9d46dd2e0eea4d5, type: 3}
   m_PrefabInstance: {fileID: 1582871871}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1591404740 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1581476337970793148, guid: 0d835aca18043ec4badd70f132a7dae1, type: 3}
-  m_PrefabInstance: {fileID: 1184138196}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1595255837
 PrefabInstance:
   m_ObjectHideFlags: 0
