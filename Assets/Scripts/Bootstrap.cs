@@ -5,6 +5,7 @@ public static class Bootstrap
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSplashScreen)]
     static void OnGameLaunch()
     {
+#if !UNITY_WEBGL
         Resolution currentResolution = Screen.currentResolution;
         float targetAspect = 1920f / 1080f;
         int maxWidth = currentResolution.width;
@@ -23,5 +24,6 @@ public static class Bootstrap
         height = Mathf.RoundToInt(height * 0.8f);
 
         Screen.SetResolution(width, height, FullScreenMode.Windowed);
+#endif
     }
 }
