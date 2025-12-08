@@ -48,18 +48,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -811275403799810041, guid: 9349b712f9a1f7f4593ca3e6e91f156e, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 45575e2456bac154ebd669924d4cad4c, type: 2}
     - target: {fileID: 919132149155446097, guid: 9349b712f9a1f7f4593ca3e6e91f156e, type: 3}
       propertyPath: m_Name
       value: curtains_long
       objectReference: {fileID: 0}
-    - target: {fileID: 4607111650596828225, guid: 9349b712f9a1f7f4593ca3e6e91f156e, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 45575e2456bac154ebd669924d4cad4c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
