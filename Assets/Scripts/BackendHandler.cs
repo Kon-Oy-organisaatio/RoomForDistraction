@@ -56,14 +56,15 @@ public class BackendHandler : MonoBehaviour
             webRequest.SetRequestHeader("Accept", "application/json");
             // Request and wait for reply
             yield return webRequest.SendWebRequest();
-            // get raw data and convert it to string
-            string resultStr = System.Text.Encoding.UTF8.GetString(webRequest.downloadHandler.data);
+            
             if (webRequest.result == UnityWebRequest.Result.ConnectionError)
             {
                 Debug.Log("Error: " + webRequest.error);
             }
             else
             {
+                // get raw data and convert it to string
+                string resultStr = System.Text.Encoding.UTF8.GetString(webRequest.downloadHandler.data);
                 // create HighScore item from json string
                 hs = JsonUtility.FromJson<HighScoreList>(resultStr);
                 updateHighScoreTextArea = true;
