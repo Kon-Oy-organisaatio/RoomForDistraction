@@ -352,7 +352,7 @@ MonoBehaviour:
   relativeRotation: {x: 0, y: -85, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   animationDuration: 0.5
-  useAction: Open/Close
+  useAction: Avaa/Sulje
   activationTarget: {fileID: 0}
   disableInteractionAfterAnimation: 0
   openAudio: {fileID: 0}
@@ -432,7 +432,7 @@ MonoBehaviour:
   relativeRotation: {x: 0, y: -85, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   animationDuration: 0.5
-  useAction: Open/Close
+  useAction: Avaa/Sulje
   activationTarget: {fileID: 0}
   disableInteractionAfterAnimation: 0
   openAudio: {fileID: 0}

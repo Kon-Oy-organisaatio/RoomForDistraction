@@ -205,7 +205,7 @@ MonoBehaviour:
   relativePosition: {x: -0.5, y: 0, z: 0}
   relativeRotation: {x: 0, y: 0, z: 0}
   animationDuration: 0.5
-  useAction: Open/Close
+  useAction: Avaa/Sulje
   activationTarget: {fileID: 0}
 --- !u!65 &2204765968089097816
 BoxCollider:
@@ -250,7 +250,7 @@ MonoBehaviour:
   relativePosition: {x: -0.5, y: 0, z: 0}
   relativeRotation: {x: 0, y: 0, z: 0}
   animationDuration: 0.5
-  useAction: Open/Close
+  useAction: Avaa/Sulje
   activationTarget: {fileID: 0}
 --- !u!65 &5274816261832299756
 BoxCollider:
@@ -295,7 +295,7 @@ MonoBehaviour:
   relativePosition: {x: -0.5, y: 0, z: 0}
   relativeRotation: {x: 0, y: 0, z: 0}
   animationDuration: 0.5
-  useAction: Open/Close
+  useAction: Avaa/Sulje
   activationTarget: {fileID: 0}
 --- !u!65 &6702713108021381903
 BoxCollider:

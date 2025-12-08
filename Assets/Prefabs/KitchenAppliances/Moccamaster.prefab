@@ -423,11 +423,13 @@ MonoBehaviour:
   relativeRotation: {x: 0, y: 0, z: 0}
   targetScale: {x: 100, y: 100, z: 100}
   animationDuration: 10
-  useAction: Open/Close
+  useAction: "K\xE4ynnist\xE4/Sammuta"
   activationTarget: {fileID: 4480655719315741819}
   disableInteractionAfterAnimation: 1
   openAudio: {fileID: 8300000, guid: 3375ddd496f32a04ea792ebc3c52fb70, type: 3}
   closeAudio: {fileID: 0}
+  state: 0
+  closeTargets: []
   disabled: 0
 --- !u!65 &5944810105449237043
 BoxCollider:

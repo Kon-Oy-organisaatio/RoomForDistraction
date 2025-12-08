@@ -647,7 +647,7 @@ MonoBehaviour:
   relativeRotation: {x: 0, y: 5, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   animationDuration: 0.43
-  useAction: Open/Close
+  useAction: Avaa/Sulje
   activationTarget: {fileID: 0}
   disableInteractionAfterAnimation: 0
   openAudio: {fileID: 0}
@@ -832,7 +832,7 @@ MonoBehaviour:
   relativeRotation: {x: 0, y: 0, z: 90}
   targetScale: {x: 0, y: 0, z: 0}
   animationDuration: 0.45
-  useAction: Open/Close
+  useAction: Avaa/Sulje
   activationTarget: {fileID: 0}
   disableInteractionAfterAnimation: 0
   openAudio: {fileID: 0}
@@ -992,7 +992,7 @@ MonoBehaviour:
   relativeRotation: {x: 0, y: 0, z: -90}
   targetScale: {x: 0, y: 0, z: 0}
   animationDuration: 0.45
-  useAction: Open/Close
+  useAction: Avaa/Sulje
   activationTarget: {fileID: 0}
   disableInteractionAfterAnimation: 0
   openAudio: {fileID: 0}
