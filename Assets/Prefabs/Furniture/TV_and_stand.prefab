@@ -208,13 +208,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6461453878743573756}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071068, z: 0, w: 0}
   m_LocalPosition: {x: 0.00359, y: -0, z: 0.02655}
   m_LocalScale: {x: 0.00345, y: 1, z: 0.00285}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7084474076263199566}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 90}
 --- !u!33 &3772177606452446911
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -246,7 +246,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 95ddc805140bd594e8a884b0bdabe7a9, type: 2}
+  - {fileID: 2100000, guid: 80d3de599ff38e34b823bdecd61a4852, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1060,7 +1060,7 @@ MonoBehaviour:
   relativeRotation: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   animationDuration: 0
-  useAction: Turn On/Turn Off
+  useAction: "K\xE4ynnist\xE4/Sammuta"
   activationTarget: {fileID: 6461453878743573756}
   disableInteractionAfterAnimation: 0
   openAudio: {fileID: 0}
