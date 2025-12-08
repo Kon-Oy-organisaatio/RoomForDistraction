@@ -113,6 +113,9 @@ public class BackendHandler : MonoBehaviour
 
                 // Notify GameManager to sync local cache
                 GameManager.Instance.highScoreManager.SyncWithBackend();
+
+                // Fetch updated high scores from backend
+                StartCoroutine(GetRequestForHighScores(urlBackendHighScores));
             }
         }
     }
