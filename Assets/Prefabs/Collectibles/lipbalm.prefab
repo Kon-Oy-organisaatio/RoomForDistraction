@@ -26,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e19000a2ef5263847b5b0534691731fc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.65
+      value: 2.6497
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e19000a2ef5263847b5b0534691731fc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -106,7 +106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6306987899838757110, guid: e19000a2ef5263847b5b0534691731fc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 6306987899838757110, guid: e19000a2ef5263847b5b0534691731fc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -168,6 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34b4d7d91e73eab4eb6234b1a1c6964e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  outline: {fileID: 0}
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 5
   useAction: 'Poimi '
