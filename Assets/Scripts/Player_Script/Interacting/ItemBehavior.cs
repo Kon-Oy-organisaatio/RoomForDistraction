@@ -39,9 +39,9 @@ public class ItemBehavior : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        Debug.Log("Picked up: " + itemName);
         if (!GameManager.Instance.cozyMode)
         {
+            Debug.Log("Picked up: " + itemName);
             GameManager.Instance.OnItemPickup(itemName);
             Destroy(gameObject);
         }
@@ -49,7 +49,8 @@ public class ItemBehavior : MonoBehaviour, IInteractable
 
     public string GetDescription()
     {
-        return useAction + itemName;
+        if (!GameManager.Instance.cozyMode) return useAction + itemName;
+        return itemName;
     }
 
 }
