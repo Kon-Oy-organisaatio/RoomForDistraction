@@ -7,6 +7,10 @@ public class InteractShower : InteractObject
     {
         state = !state;
         stopEmitScript.TogleEmmit();
+        if (activationTarget != null)
+        {
+            activationTarget.SetActive(state);
+        }
     }
 
 }

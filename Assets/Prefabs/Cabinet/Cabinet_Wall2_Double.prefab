@@ -542,8 +542,8 @@ MonoBehaviour:
   useAction: Avaa/Sulje
   activationTarget: {fileID: 0}
   disableInteractionAfterAnimation: 0
-  openAudio: {fileID: 0}
-  closeAudio: {fileID: 0}
+  openAudio: {fileID: 8300000, guid: a6e6658b7bf554a41acee02147742111, type: 3}
+  closeAudio: {fileID: 8300000, guid: 3eb9e04f71d6e7a4cb91e02d8c18c939, type: 3}
   state: 0
   closeTargets: []
   disabled: 0
@@ -596,8 +596,8 @@ MonoBehaviour:
   useAction: Avaa/Sulje
   activationTarget: {fileID: 0}
   disableInteractionAfterAnimation: 0
-  openAudio: {fileID: 0}
-  closeAudio: {fileID: 0}
+  openAudio: {fileID: 8300000, guid: a6e6658b7bf554a41acee02147742111, type: 3}
+  closeAudio: {fileID: 8300000, guid: 3eb9e04f71d6e7a4cb91e02d8c18c939, type: 3}
   state: 0
   closeTargets: []
   disabled: 0

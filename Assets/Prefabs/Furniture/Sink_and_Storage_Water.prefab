@@ -517,6 +517,53 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &3083749566671005069
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 139792213731303591}
+  - component: {fileID: 7454680682936802494}
+  m_Layer: 0
+  m_Name: Audioplayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &139792213731303591
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3083749566671005069}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.04311347, y: -0.08401942, z: 0.058845043}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3820722346262578667}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7454680682936802494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3083749566671005069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6111745d5f516984a9373bbad70220f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 4ec6c87237de3c346b1f6931e98055b1, type: 3}
+  volume: 0.5
+  loop: 1
 --- !u!1 &3417119650673744038
 GameObject:
   m_ObjectHideFlags: 0
@@ -648,7 +695,7 @@ MonoBehaviour:
   targetScale: {x: 0, y: 0, z: 0}
   animationDuration: 0.43
   useAction: Avaa/Sulje
-  activationTarget: {fileID: 0}
+  activationTarget: {fileID: 3083749566671005069}
   disableInteractionAfterAnimation: 0
   openAudio: {fileID: 0}
   closeAudio: {fileID: 0}
@@ -835,8 +882,8 @@ MonoBehaviour:
   useAction: Avaa/Sulje
   activationTarget: {fileID: 0}
   disableInteractionAfterAnimation: 0
-  openAudio: {fileID: 0}
-  closeAudio: {fileID: 0}
+  openAudio: {fileID: 8300000, guid: a6e6658b7bf554a41acee02147742111, type: 3}
+  closeAudio: {fileID: 8300000, guid: 3eb9e04f71d6e7a4cb91e02d8c18c939, type: 3}
   state: 0
   closeTargets: []
   disabled: 0
@@ -995,8 +1042,8 @@ MonoBehaviour:
   useAction: Avaa/Sulje
   activationTarget: {fileID: 0}
   disableInteractionAfterAnimation: 0
-  openAudio: {fileID: 0}
-  closeAudio: {fileID: 0}
+  openAudio: {fileID: 8300000, guid: a6e6658b7bf554a41acee02147742111, type: 3}
+  closeAudio: {fileID: 8300000, guid: 3eb9e04f71d6e7a4cb91e02d8c18c939, type: 3}
   state: 0
   closeTargets: []
   disabled: 0
@@ -1053,6 +1100,7 @@ Transform:
   - {fileID: 2161254451345457328}
   - {fileID: 8851812504092861945}
   - {fileID: 5926426560770766158}
+  - {fileID: 139792213731303591}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6834141578513321959

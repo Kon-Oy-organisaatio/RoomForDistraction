@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5052900660913687274
 Transform:
   m_ObjectHideFlags: 0
@@ -5039,6 +5039,7 @@ MonoBehaviour:
   openAudio: {fileID: 0}
   closeAudio: {fileID: 0}
   state: 1
+  closeTargets: []
   disabled: 0
 --- !u!65 &2823912817292745168
 BoxCollider:

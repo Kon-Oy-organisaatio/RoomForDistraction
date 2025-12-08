@@ -200,13 +200,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a91fb61b22240a34bbee79d50943ad03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectToOutline: {fileID: 0}
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 5
+  objectToAnimate: {fileID: 0}
   relativePosition: {x: -0.5, y: 0, z: 0}
   relativeRotation: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
   animationDuration: 0.5
   useAction: Avaa/Sulje
   activationTarget: {fileID: 0}
+  disableInteractionAfterAnimation: 0
+  openAudio: {fileID: 8300000, guid: 7b11d19081c346a44b7e02eea0246209, type: 3}
+  closeAudio: {fileID: 8300000, guid: cc0582c75e0a4ee48b733c516847d6f4, type: 3}
+  state: 0
+  closeTargets: []
+  disabled: 0
 --- !u!65 &2204765968089097816
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -245,13 +254,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a91fb61b22240a34bbee79d50943ad03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectToOutline: {fileID: 0}
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 5
+  objectToAnimate: {fileID: 0}
   relativePosition: {x: -0.5, y: 0, z: 0}
   relativeRotation: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
   animationDuration: 0.5
   useAction: Avaa/Sulje
   activationTarget: {fileID: 0}
+  disableInteractionAfterAnimation: 0
+  openAudio: {fileID: 8300000, guid: 7b11d19081c346a44b7e02eea0246209, type: 3}
+  closeAudio: {fileID: 8300000, guid: cc0582c75e0a4ee48b733c516847d6f4, type: 3}
+  state: 0
+  closeTargets: []
+  disabled: 0
 --- !u!65 &5274816261832299756
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -290,13 +308,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a91fb61b22240a34bbee79d50943ad03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectToOutline: {fileID: 0}
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 5
+  objectToAnimate: {fileID: 0}
   relativePosition: {x: -0.5, y: 0, z: 0}
   relativeRotation: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
   animationDuration: 0.5
   useAction: Avaa/Sulje
   activationTarget: {fileID: 0}
+  disableInteractionAfterAnimation: 0
+  openAudio: {fileID: 8300000, guid: 7b11d19081c346a44b7e02eea0246209, type: 3}
+  closeAudio: {fileID: 8300000, guid: cc0582c75e0a4ee48b733c516847d6f4, type: 3}
+  state: 0
+  closeTargets: []
+  disabled: 0
 --- !u!65 &6702713108021381903
 BoxCollider:
   m_ObjectHideFlags: 0

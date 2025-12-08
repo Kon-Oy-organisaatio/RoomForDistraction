@@ -745,8 +745,8 @@ MonoBehaviour:
   useAction: Avaa/Sulje
   activationTarget: {fileID: 0}
   disableInteractionAfterAnimation: 0
-  openAudio: {fileID: 0}
-  closeAudio: {fileID: 0}
+  openAudio: {fileID: 8300000, guid: 7b11d19081c346a44b7e02eea0246209, type: 3}
+  closeAudio: {fileID: 8300000, guid: cc0582c75e0a4ee48b733c516847d6f4, type: 3}
   state: 0
   closeTargets: []
   disabled: 0
@@ -856,8 +856,8 @@ MonoBehaviour:
   useAction: Avaa/Sulje
   activationTarget: {fileID: 0}
   disableInteractionAfterAnimation: 0
-  openAudio: {fileID: 0}
-  closeAudio: {fileID: 0}
+  openAudio: {fileID: 8300000, guid: 7b11d19081c346a44b7e02eea0246209, type: 3}
+  closeAudio: {fileID: 8300000, guid: cc0582c75e0a4ee48b733c516847d6f4, type: 3}
   state: 0
   closeTargets: []
   disabled: 0
@@ -988,8 +988,8 @@ MonoBehaviour:
   useAction: Avaa/Sulje
   activationTarget: {fileID: 0}
   disableInteractionAfterAnimation: 0
-  openAudio: {fileID: 0}
-  closeAudio: {fileID: 0}
+  openAudio: {fileID: 8300000, guid: 7b11d19081c346a44b7e02eea0246209, type: 3}
+  closeAudio: {fileID: 8300000, guid: cc0582c75e0a4ee48b733c516847d6f4, type: 3}
   state: 0
   closeTargets: []
   disabled: 0
