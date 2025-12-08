@@ -36,7 +36,7 @@ public class BackendHandler : MonoBehaviour
             {
                 /* hsList += hs.scores[i].playername + ": \t" + hs.scores[i].score + " \t" + hs.scores[i].playtime+"\n"; */
                 float seconds = hs.scores[i].mstime / 1000f;
-                hsList += string.Format("[ {0} ] | {1,-15} | {2,5} | {3,-15:F2}s\n", (i + 1),
+                hsList += string.Format("[ {0} ] | {1,-15} | {2,5} | {3,-7:F2}s\n", (i + 1),
                     hs.scores[i].playerName,
                     hs.scores[i].score,
                     seconds);
