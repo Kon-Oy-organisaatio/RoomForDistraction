@@ -292,7 +292,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -238.65877, y: 37.970055}
+  m_AnchoredPosition: {x: -255.2, y: 37.970055}
   m_SizeDelta: {x: 160, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &124365275
@@ -1405,7 +1405,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 114.99014, y: -31.844204}
+  m_AnchoredPosition: {x: 114.99014, y: -37.1}
   m_SizeDelta: {x: 200, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &792157997
@@ -1428,7 +1428,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "- teht\xE4v\xE4 1, teht\xE4v\xE4 2"
+  m_text: visualisti, asunto & assetit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: de19779e1bfe5a24aad14e4ca7b47ba0, type: 2}
   m_sharedMaterial: {fileID: 8311379831427497501, guid: de19779e1bfe5a24aad14e4ca7b47ba0, type: 2}
@@ -1493,7 +1493,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -82.18066, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1892,7 +1892,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 114.99014, y: -31.844204}
+  m_AnchoredPosition: {x: 114.99014, y: -36.3}
   m_SizeDelta: {x: 200, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1186570449
@@ -1915,7 +1915,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "- teht\xE4v\xE4 1, teht\xE4v\xE4 2"
+  m_text: 2D assetit (UI) & menu logic
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: de19779e1bfe5a24aad14e4ca7b47ba0, type: 2}
   m_sharedMaterial: {fileID: 8311379831427497501, guid: de19779e1bfe5a24aad14e4ca7b47ba0, type: 2}
@@ -1980,7 +1980,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -10.46933, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2065,7 +2065,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 114.99014, y: -31.844204}
+  m_AnchoredPosition: {x: 114.99014, y: -37.2}
   m_SizeDelta: {x: 200, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1235170115
@@ -2088,7 +2088,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "- teht\xE4v\xE4 1, teht\xE4v\xE4 2"
+  m_text: skriptiarkkitehtuuri & spawnit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: de19779e1bfe5a24aad14e4ca7b47ba0, type: 2}
   m_sharedMaterial: {fileID: 8311379831427497501, guid: de19779e1bfe5a24aad14e4ca7b47ba0, type: 2}
@@ -2153,7 +2153,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -23.886414, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2338,7 +2338,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 114.99014, y: -31.844204}
+  m_AnchoredPosition: {x: 114.99014, y: -37.1}
   m_SizeDelta: {x: 200, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1372057701
@@ -2361,7 +2361,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "- teht\xE4v\xE4 1 teht\xE4v\xE4 2"
+  m_text: FP-controller & VFX
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: de19779e1bfe5a24aad14e4ca7b47ba0, type: 2}
   m_sharedMaterial: {fileID: 8311379831427497501, guid: de19779e1bfe5a24aad14e4ca7b47ba0, type: 2}
@@ -2511,7 +2511,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 114.99014, y: -31.844204}
+  m_AnchoredPosition: {x: 114.99014, y: -36.5}
   m_SizeDelta: {x: 200, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1739499820
@@ -2534,7 +2534,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "- teht\xE4v\xE4 1, ffteht\xE4v\xE4 2"
+  m_text: guru, kaikki mahdollinen
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: de19779e1bfe5a24aad14e4ca7b47ba0, type: 2}
   m_sharedMaterial: {fileID: 8311379831427497501, guid: de19779e1bfe5a24aad14e4ca7b47ba0, type: 2}
@@ -2919,7 +2919,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 114.99014, y: -31.844181}
+  m_AnchoredPosition: {x: 114.99014, y: -37.1}
   m_SizeDelta: {x: 200, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1928170149
@@ -2942,7 +2942,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "- teht\xE4v\xE4 1teht\xE4v\xE4 2"
+  m_text: backend, high scores & assetit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: de19779e1bfe5a24aad14e4ca7b47ba0, type: 2}
   m_sharedMaterial: {fileID: 8311379831427497501, guid: de19779e1bfe5a24aad14e4ca7b47ba0, type: 2}
@@ -3007,7 +3007,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -26.149162, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3297,7 +3297,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 114.99014, y: -31.844204}
+  m_AnchoredPosition: {x: 117.2, y: -37.5}
   m_SizeDelta: {x: 200, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2120132466
@@ -3320,7 +3320,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "- teht\xE4v\xE4 1, teht\xE4v\xE4 2"
+  m_text: visualisti & assetit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: de19779e1bfe5a24aad14e4ca7b47ba0, type: 2}
   m_sharedMaterial: {fileID: 8311379831427497501, guid: de19779e1bfe5a24aad14e4ca7b47ba0, type: 2}
