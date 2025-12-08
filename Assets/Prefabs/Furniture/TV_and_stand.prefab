@@ -246,7 +246,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 80d3de599ff38e34b823bdecd61a4852, type: 2}
+  - {fileID: 2100000, guid: df2e7cc54ac5d1b4abe10a4b519c6a90, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -303,30 +303,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   materialSoundPairs:
-  - material: {fileID: 2100000, guid: ffa44090026c6d74abed10f962b77743, type: 2}
+  - material: {fileID: 2100000, guid: a1401a6b16f12364599e1207ee3c7ccd, type: 2}
     sound:
       audioClip: {fileID: 0}
       loop: 0
       volume: 1
-    duration: 15
-  - material: {fileID: 2100000, guid: 95ddc805140bd594e8a884b0bdabe7a9, type: 2}
-    sound:
-      audioClip: {fileID: 8300000, guid: 192ef99e11818f74cace0bfb1729cfe7, type: 3}
-      loop: 1
-      volume: 0.1
-    duration: 0.5
-  - material: {fileID: 2100000, guid: 80d3de599ff38e34b823bdecd61a4852, type: 2}
+    duration: 2
+  - material: {fileID: 2100000, guid: d9359da7b585459459e0629d6498775c, type: 2}
     sound:
       audioClip: {fileID: 0}
       loop: 1
       volume: 1
-    duration: 15
+    duration: 2
+  - material: {fileID: 2100000, guid: ec225d10d97f9a046a38eef510e70e5c, type: 2}
+    sound:
+      audioClip: {fileID: 0}
+      loop: 1
+      volume: 1
+    duration: 2
+  - material: {fileID: 2100000, guid: 49251019738071744beb2c9b10b8af45, type: 2}
+    sound:
+      audioClip: {fileID: 0}
+      loop: 0
+      volume: 1
+    duration: 2
+  - material: {fileID: 2100000, guid: df2e7cc54ac5d1b4abe10a4b519c6a90, type: 2}
+    sound:
+      audioClip: {fileID: 0}
+      loop: 0
+      volume: 1
+    duration: 2
   - material: {fileID: 2100000, guid: 95ddc805140bd594e8a884b0bdabe7a9, type: 2}
     sound:
       audioClip: {fileID: 8300000, guid: 192ef99e11818f74cace0bfb1729cfe7, type: 3}
       loop: 1
       volume: 0.1
-    duration: 0.5
+    duration: 1
 --- !u!1 &7384431330190862472
 GameObject:
   m_ObjectHideFlags: 0
