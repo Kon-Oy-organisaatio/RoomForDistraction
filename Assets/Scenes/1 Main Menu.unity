@@ -7816,7 +7816,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Room for distraction
+  m_text: Room for Distraction
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c31a764b3edb2f548b0e7ff1aa6581e7, type: 2}
   m_sharedMaterial: {fileID: -4407311667805119576, guid: c31a764b3edb2f548b0e7ff1aa6581e7, type: 2}
