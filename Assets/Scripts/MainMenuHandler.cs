@@ -10,6 +10,7 @@ public class MainMenuHandler : MonoBehaviour
 
     public void Start()
     {
+        Time.timeScale = 1f;
         if (playerData.PlayerName != "Player")
         {
             playerNameCanvas.SetActive(false);

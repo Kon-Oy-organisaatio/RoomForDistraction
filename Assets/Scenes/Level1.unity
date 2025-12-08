@@ -33223,6 +33223,22 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3697689942212051006, guid: c6d93984939098849a1b642886d7de17, type: 3}
+      propertyPath: closeTargets.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3697689942212051006, guid: c6d93984939098849a1b642886d7de17, type: 3}
+      propertyPath: 'closeTargets.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2124300706}
+    - target: {fileID: 3929941635045235295, guid: c6d93984939098849a1b642886d7de17, type: 3}
+      propertyPath: closeTargets.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3929941635045235295, guid: c6d93984939098849a1b642886d7de17, type: 3}
+      propertyPath: 'closeTargets.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2124300706}
     - target: {fileID: 4544060251598320565, guid: c6d93984939098849a1b642886d7de17, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -33239,6 +33255,22 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6814967252120033301, guid: c6d93984939098849a1b642886d7de17, type: 3}
+      propertyPath: closeTargets.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6814967252120033301, guid: c6d93984939098849a1b642886d7de17, type: 3}
+      propertyPath: 'closeTargets.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2124300706}
+    - target: {fileID: 8037581361263606944, guid: c6d93984939098849a1b642886d7de17, type: 3}
+      propertyPath: closeTargets.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8037581361263606944, guid: c6d93984939098849a1b642886d7de17, type: 3}
+      propertyPath: 'closeTargets.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2124300706}
     - target: {fileID: 8385288376851181052, guid: c6d93984939098849a1b642886d7de17, type: 3}
       propertyPath: m_Name
       value: cabinet_Drawer (3)
@@ -39607,6 +39639,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 9213049525039480450, guid: c902e061c6b947c4197eabca4b1837cb, type: 3}
   m_PrefabInstance: {fileID: 2124108893}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2124300706 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7663012054766531328, guid: b6f709fc9b98c9e44a0757d222307991, type: 3}
+  m_PrefabInstance: {fileID: 1549369452}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &2127005485 stripped
 Transform:
