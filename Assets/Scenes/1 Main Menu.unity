@@ -7375,8 +7375,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 16.39774, y: -111.099335}
-  m_SizeDelta: {x: 584.73, y: 168.6115}
+  m_AnchoredPosition: {x: 97.62615, y: -162.42627}
+  m_SizeDelta: {x: 667.991, y: 276.8508}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1842280884
 MonoBehaviour:
@@ -7399,7 +7399,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Liikkuminen - WASD \nMene kyykkyyn - C\nTauko - ESC\nK\xE4yt\xE4 asioita
-    - E\n\nFullscreen on/off - alt/option + Enter"
+    - E\n\nFullscreen on/off - alt + Enter"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e96e9ef7a2c2f6f40b1db66c886bf46e, type: 2}
   m_sharedMaterial: {fileID: -7692225295330097468, guid: e96e9ef7a2c2f6f40b1db66c886bf46e, type: 2}
