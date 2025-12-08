@@ -62,7 +62,7 @@ public class GameManager : MonoBehaviour
         if (checklistUI.AllItemsCollected())
         {
             Debug.Log("GameManager: All items collected! Ending game.");
-            gameOverText.text = "Peli päättyi\nKeräsit kaikki esineet!";
+            gameOverText.text = "Peli päättyi. Keräsit kaikki esineet";
             TriggerGameOver();
         }
     }
@@ -89,6 +89,7 @@ public class GameManager : MonoBehaviour
         gameOverHandled = true;
 
         pauseManager.EndGame();
+        gameOverText.text += "\n" + scoreManager.GetScore() + " pistettä kerätty ajassa " + (int)gameTime + "s";
         gameOverCanvas.enabled = true;
         Debug.Log("GameManager: Game Over!");
 
@@ -133,7 +134,7 @@ public class GameManager : MonoBehaviour
         gameTime += Time.deltaTime;
         if (gameTime >= gameDuration)
         {
-            gameOverText.text = "Peli päättyi\nAika loppui!";
+            gameOverText.text = "Peli päättyi. Aika loppui!";
             TriggerGameOver();
             clockUI.UpdateClock(gameDuration, gameDuration);
         }
