@@ -38449,25 +38449,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3962261586529106340, guid: 894e7242433f0dc4482e299d518680ce, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4901318979226097903, guid: 894e7242433f0dc4482e299d518680ce, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7136957453325657633, guid: 894e7242433f0dc4482e299d518680ce, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7716641727924104269, guid: 894e7242433f0dc4482e299d518680ce, type: 3}
       propertyPath: m_Name
       value: Radio
-      objectReference: {fileID: 0}
-    - target: {fileID: 7716641727924104269, guid: 894e7242433f0dc4482e299d518680ce, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
