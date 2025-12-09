@@ -10,6 +10,7 @@ public class ItemBehavior : MonoBehaviour, IInteractable
     [Header("Item Settings")]
     public string useAction = "Poimi ";
     public string itemName = "Tavara";
+    public string lookAction = "Katso, ";
 
     public void Start()
     {
@@ -50,7 +51,7 @@ public class ItemBehavior : MonoBehaviour, IInteractable
     public string GetDescription()
     {
         if (!GameManager.Instance.cozyMode) return useAction + itemName;
-        return itemName;
+        return lookAction + itemName;
     }
 
 }
