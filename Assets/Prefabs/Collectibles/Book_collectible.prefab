@@ -186,7 +186,8 @@ MonoBehaviour:
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 5
   useAction: 'Poimi '
-  itemName: Kirja
+  itemName: Ruutuvihko
+  lookAction: 'Katso, '
 --- !u!65 &6668047298003710782
 BoxCollider:
   m_ObjectHideFlags: 0
